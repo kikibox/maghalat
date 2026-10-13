@@ -1,0 +1,43 @@
+# Session handoff — 2026-10-13 — Navar Abyari
+
+## Scope and safety
+- Requested: continue SEO remediation for navar-abyari.ir and sync this session to the project's repository.
+- User confirmed repository: kikibox/maghalat, main branch. Existing auto-generated translation status files are preserved.
+- Public-repository payload must exclude full SQL dumps, credentials, cookies, raw account screens, service account keys and raw private GSC exports. This handoff is a sanitized technical summary.
+- Current work is read-only against the live site. Local package creation is NOT live deployment.
+
+## Earlier work and confirmations
+- Russian content corrections were imported by user (v2; v1 had a MySQL temporary-table reporting issue).
+- User activated language output and product category query fixes prepared earlier in the session.
+- Product category sitemap was enabled and submitted by user; GSC reports Success. Sitemap discovery does not prove indexing.
+- Audit reviewed primary GSC reports and issue details, not every site's URL or every URL Inspection. Older report snapshots must not be interpreted as proof the latest changes failed.
+
+## Remaining priorities
+1. Mobile LCP and INP remediation: field-data issues, cause still requires performance diagnosis.
+2. Exact legacy product aliases: fix only verified equivalents; do not redirect all 404s to home.
+3. Important content not indexed: separate feeds, query variants and intentional exclusions before assessing content quality.
+4. Ardabil VideoObject: missing thumbnailUrl; current server-rendered page HTML contains neither a player nor a direct video link. User approved displaying the declared video on the page with a genuine thumbnail. Do not add an arbitrary image just to satisfy validation.
+5. Noncritical product schema warnings: shipping/returns/category and real reviews only. No fabricated ratings.
+6. Video watch-page exclusion does not mean the underlying article/product is unindexed.
+
+## Prepared product-redirect patch — not selected for deployment
+- Plugin: Navar Product Legacy Redirects 1.0.0.
+- Eight exact legacy source paths mapped to six published product IDs: 35006, 655, 35011, 37850, 37848, 35012.
+- All six destinations verified live with HTTP 200, index robots and self-canonical on 2026-10-13.
+- Exact path matching only; no wildcard/fuzzy matches. One URL-decode pass supports the exact malformed-byte alias reported by Google.
+- Only GET/HEAD 404s; query-string requests, valid URLs, admin/AJAX/cron and other routes untouched.
+- Only published product destinations, matching the verified permalink, on this domain over HTTPS. Fail closed for missing/draft/wrong-type/changed or external destinations.
+- No database writes, schema changes, robot rules, language changes, flush rules or GSC submission.
+- PHP lint passed. 47 assertions passed with local WordPress stubs. This is NOT a full WordPress integration test or live installation test.
+- ZIP v1 was prepared but user requested a root-cause fix instead of an additional runtime plugin. User was instructed NOT to install it. No installation/activation confirmed.
+- Rollback: deactivate plugin and purge caches. Previously cached browser/crawler 301s may persist separately.
+
+## Next actions
+- Sync this handoff to the confirmed repository without overwriting unrelated project state.
+- Investigate original stored content, menu/meta/options and theme code for exact old links. Prefer permanent targeted edits using native WordPress/Rank Math APIs; keep legitimate existing product permalinks unchanged. Retain exact 301s only for externally used old aliases via existing tools.
+- Verify each of the eight sources, six destination pages, unrelated 404 and translated-product URLs.
+- Add the approved video to original Ardabil content and correct native Rank Math VideoObject metadata. Implementation/deployment pending; do not mark fixed until live validation.
+- Do not click Validate Fix until post-deployment live checks pass; user authorization required for further actions.
+
+## Latest user decision
+The user explicitly prefers root-cause remediation rather than another wrapper plugin. The next fix should repair original data/code where wrong links are generated. The old redirect package remains an uninstalled fallback, not the chosen solution. Backup-derived findings must be distinguished from current live DB state.

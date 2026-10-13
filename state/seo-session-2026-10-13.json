@@ -1,0 +1,39 @@
+{
+  "session_date": "2026-10-13",
+  "site": "https://navar-abyari.ir",
+  "repository": "kikibox/maghalat",
+  "repository_branch": "main",
+  "scope": "SEO audit and root-cause remediation",
+  "previous_fixes": {
+    "ru_content_v2": "imported_by_user",
+    "language_output_fix_v1": "activated_by_user",
+    "product_category_query_fix_v1": "activated_by_user",
+    "product_category_sitemap": "submitted_by_user_success"
+  },
+  "legacy_redirect_plugin_v1": {
+    "status": "not_deployed",
+    "user_decision": "prefer_root_cause_fix_do_not_install",
+    "local_lint": "passed",
+    "local_stub_assertions_passed": 47,
+    "live_integration_test": "not_run"
+  },
+  "ardabil_video": {
+    "post_id": 35373,
+    "decision": "display_declared_video_on_page",
+    "native_schema_fix": "pending",
+    "live_deployment": "not_done"
+  },
+  "root_cause_work": {
+    "status": "investigating",
+    "do_not_change_existing_valid_product_permalinks": true,
+    "native_wordpress_and_rankmath_edits_preferred": true,
+    "backup_snapshot_not_current_live_db": true
+  },
+  "next_steps": [
+    "Inventory exact wrong links in original data/code",
+    "Build reversible native remediation after current-state guards",
+    "Deploy with fresh backup and user-controlled execution",
+    "Verify live URLs, page player and JSON-LD before GSC validation"
+  ],
+  "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced"
+}
