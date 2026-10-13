@@ -62,14 +62,34 @@
     "historical_revisions_changed": 0,
     "existing_product_permalinks_changed": false,
     "language_configuration_changed": false,
-    "external_legacy_alias_redirects": "pending_native_exact_301_no_new_redirect_plugin",
+    "external_legacy_alias_redirects": "deployed_native_htaccess_exact_8_paths_get_head_no_query_verified_one_hop_200",
     "global_cache_deletion": false
   },
   "next_steps": [
-    "Implement and verify exact native 301s for the eight externally used legacy aliases with backups; do not redirect unrelated 404s",
     "Diagnose mobile LCP and INP independently",
     "Review important unindexed content separately from feeds, query variants and intentional exclusions",
     "Recheck Search Console after Google recrawls; current deployment is not a new GSC validation result"
   ],
-  "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced"
+  "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced",
+  "native_exact_legacy_301": {
+    "status": "deployed_live_verified",
+    "implementation": "top_level_htaccess_block_outside_wordpress_generated_markers",
+    "source_count": 8,
+    "destination_product_count": 6,
+    "get_301_count": 8,
+    "head_301_count": 8,
+    "one_hop_http200_count": 8,
+    "query_exclusion_checks": 8,
+    "post_exclusion_http": 404,
+    "unrelated_404_control_http": 404,
+    "homepage_http": 200,
+    "sitemap_index_http": 200,
+    "original_config_preserved_as_exact_suffix": true,
+    "private_server_backup_outside_public_html": true,
+    "server_file_sha256_verified": "1db58c2260ea5417229983616cb9dd7f4858bf5acc8bbcaa1d1542e70a7b56ed",
+    "new_database_mutations": 0,
+    "rank_math_redirection_module_activated": false,
+    "additional_plugin_installed": false,
+    "gsc_validation": "not_requested_no_new_google_crawl_claim"
+  }
 }

@@ -4,7 +4,7 @@
 - Requested: continue SEO remediation for navar-abyari.ir and sync this session to the project's repository.
 - User confirmed repository: kikibox/maghalat, main branch. Existing auto-generated translation status files are preserved.
 - Public-repository payload must exclude full SQL dumps, credentials, cookies, raw account screens, service account keys and raw private GSC exports. This handoff is a sanitized technical summary.
-- Current status: authorized root article-link and Ardabil native-video edits are deployed and verified. Earlier read-only/pending sections below document historical stages; the latest deployment section supersedes them. No additional redirect plugin installed.
+- Current status: authorized root article-link, Ardabil native-video and eight exact native legacy-301 repairs are deployed and verified. Earlier read-only/pending sections below document historical stages; the latest deployment section supersedes them. No additional redirect plugin installed.
 
 ## Earlier work and confirmations
 - Russian content corrections were imported by user (v2; v1 had a MySQL temporary-table reporting issue).
@@ -12,7 +12,7 @@
 - Product category sitemap was enabled and submitted by user; GSC reports Success. Sitemap discovery does not prove indexing.
 - Audit reviewed primary GSC reports and issue details, not every site's URL or every URL Inspection. Older report snapshots must not be interpreted as proof the latest changes failed.
 
-## Remaining priorities
+## Priorities identified during the audit (deployment updates below)
 1. Mobile LCP and INP remediation: field-data issues, cause still requires performance diagnosis.
 2. Exact legacy product aliases: fix only verified equivalents; do not redirect all 404s to home.
 3. Important content not indexed: separate feeds, query variants and intentional exclusions before assessing content quality.
@@ -74,3 +74,15 @@ The user explicitly prefers root-cause remediation rather than another wrapper p
 - Exact native 301 handling of the eight external legacy aliases is still pending; internal source correction does not by itself repair external bookmarks. The rejected redirect plugin remains uninstalled. No unrelated 404s redirected.
 - Remaining separate work: legacy exact 301s through existing tools/configuration, mobile performance diagnosis, important unindexed content review and genuine noncritical product-schema data.
 - Public sync excludes snapshots, full article SQL payloads, serialized private backup values, session URLs, credentials and raw GSC exports. Existing translation live-status files remain untouched.
+
+## Latest exact native legacy-301 deployment
+- Baseline: all eight selected aliases returned404; all six verified product destinations returned200.
+- Read current Rank Math module configuration and schema: redirection module inactive and no native redirection tables. Did not activate it or change plugin options.
+- Read original root .htaccess, saved a private local copy, and made a private server copy outside public_html before editing. Original editor text matched the backup exactly.
+- Prepended a clearly marked eight-rule block OUTSIDE WordPress-generated markers. The existing WordPress, compression/browser-cache and PHP directives remain an exact unchanged suffix. No new plugin, database updates, language changes or product slug edits.
+- Exact byte-path matches, domain restriction, GET/HEAD only, empty query string only; no wildcard 404/home redirects. The exact malformed-byte alias is included without fuzzy normalization.
+- Initial percent-encoded substitution interacted with this webserver's numeric backreferences. Post-save checks caught incorrect Location output; original configuration was immediately restored and checked. Corrected substitutions use literal UTF-8 target paths. Independent fresh read confirmed final saved file hash. Server propagation briefly returned older responses; repeated final checks passed for every source. Do not reuse the failed encoded-substitution variant.
+- Final verification: all eight GET and eight HEAD requests returned301 to their exact expected destinations. Following each source required exactly one redirect and ended at HTTP200 on the correct product. All eight query-string exclusions returned404, an unrelated404 stayed404 and a POST control stayed404. Homepage and sitemap_index.xml returned200.
+- Backups and complete server configuration are private. Only the isolated new rule block and sanitized documentation are synced. Existing auto-generated translation status files remain untouched.
+- Fixed external handling for these eight selected aliases only. This does not mean all site404s are resolved, all GSC examples are fixed or Google has recrawled. No GSC Validate Fix clicked.
+- Next priority: independently diagnose mobile LCP/INP, then review important unindexed content and remaining real schema warnings.
