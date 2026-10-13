@@ -50,3 +50,12 @@ The user explicitly prefers root-cause remediation rather than another wrapper p
 - Public REST verification of the nine candidate posts failed with an SSL EOF; no write attempted. A small read-only current-state export is requested before preparing guarded native updates. Do not overwrite current content with old backup snapshots or run naive REPLACE on PHP-serialized metadata.
 - Diagnostic SQL is SELECT-only. Current export must remain local and never be committed to this public repository.
 - Full root remediation, thumbnail extraction and live deployment remain pending.
+
+## Current-state verification after secure sign-in
+- Secure cPanel login succeeded; phpMyAdmin opened for the requested database. No credentials or session URLs are committed.
+- One SELECT-only query fetched ten current published pages and one native video metadata row. Snapshot remains local/private.
+- Current stored content confirms twelve wrong href occurrences across the nine candidate articles; this is no longer merely a backup finding.
+- Current Ardabil metadata still declares VideoObject; the requested _thumbnail_id record is absent. Native thumbnail handling needs correction with a real accessible video image.
+- The earlier manual current-export request is now resolved: user does not need to send exports.
+- No UPDATE, INSERT, DELETE, ALTER, media upload or live fix has been executed in this verification step.
+- Next: prepare guarded, reversible root edits using this current snapshot, then present/execute within the authorized repair workflow. Runtime redirect ZIP is still not the selected solution.

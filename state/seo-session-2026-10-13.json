@@ -24,7 +24,7 @@
     "live_deployment": "not_done"
   },
   "root_cause_work": {
-    "status": "backup_root_findings_identified_current_export_needed",
+    "status": "current_read_only_snapshot_verified_root_patch_pending",
     "do_not_change_existing_valid_product_permalinks": true,
     "native_wordpress_and_rankmath_edits_preferred": true,
     "backup_snapshot_not_current_live_db": true,
@@ -42,13 +42,19 @@
       502146,
       502187,
       502188
-    ]
+    ],
+    "current_snapshot_pages": 10,
+    "current_articles_with_wrong_links": 9,
+    "current_wrong_href_occurrences": 12,
+    "manual_export_needed": false,
+    "verification_method": "secure_phpmyadmin_select_only",
+    "database_mutations": 0
   },
   "next_steps": [
-    "Obtain SELECT-only current export for nine candidate articles and Ardabil page/video metadata",
-    "Build guarded reversible native content and Rank Math changes; do not import old full content",
-    "Use existing redirect tooling only for confirmed external legacy aliases",
-    "Deploy and verify actual page video/thumbnail and 301→200 before any GSC validation"
+    "Prepare guarded reversible root edits from current local snapshot",
+    "Correct original article hrefs without replacing unrelated text, translations, slugs or revisions",
+    "Display the approved video and set a real accessible thumbnail in native Rank Math data",
+    "After backup and scope checks apply and validate live results before GSC validation"
   ],
   "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced"
 }
