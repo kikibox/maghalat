@@ -4,7 +4,7 @@
 - Requested: continue SEO remediation for navar-abyari.ir and sync this session to the project's repository.
 - User confirmed repository: kikibox/maghalat, main branch. Existing auto-generated translation status files are preserved.
 - Public-repository payload must exclude full SQL dumps, credentials, cookies, raw account screens, service account keys and raw private GSC exports. This handoff is a sanitized technical summary.
-- Current work is read-only against the live site. Local package creation is NOT live deployment.
+- Current status: authorized root article-link and Ardabil native-video edits are deployed and verified. Earlier read-only/pending sections below document historical stages; the latest deployment section supersedes them. No additional redirect plugin installed.
 
 ## Earlier work and confirmations
 - Russian content corrections were imported by user (v2; v1 had a MySQL temporary-table reporting issue).
@@ -59,3 +59,18 @@ The user explicitly prefers root-cause remediation rather than another wrapper p
 - The earlier manual current-export request is now resolved: user does not need to send exports.
 - No UPDATE, INSERT, DELETE, ALTER, media upload or live fix has been executed in this verification step.
 - Next: prepare guarded, reversible root edits using this current snapshot, then present/execute within the authorized repair workflow. Runtime redirect ZIP is still not the selected solution.
+
+## Latest authorized root deployment and independent verification
+- Re-read exact current values as HEX and compared client SHA-256 with MySQL SHA2 before mutation. phpMyAdmin display converts some spaces to NBSP; an earlier guarded attempt detected mismatches and made no content updates. Do not reuse display-normalized text as a byte-exact backup.
+- Corrected twelve exact anchor href occurrences in the original bodies of nine published articles. Anchor text, other content, revisions, language configuration, valid product slugs and article modification timestamps were preserved. Six published destination products were independently validated.
+- Independent SELECT after the guarded transaction confirmed all nine stored body hashes matched the prepared replacements.
+- Added the already-declared MP4 to original Ardabil post35373 as a native controlled video player: no autoplay, preload=none, responsive sizing, genuine video-frame poster. No new persistent plugin or schema-output filter.
+- Source MP4 remained unchanged. Genuine frame extracted from the source (640x640); verified uploaded JPEG HTTP200 and exact SHA256. Poster uses a versioned image URL to bypass an earlier negatively cached bare URL.
+- Unserialized and reserialized native Rank Math VideoObject row11648 with round-trip verification. Only thumbnailUrl and duration (PT57S from a 57.424s source) changed. Existing contentUrl and all other fields were preserved. Page modification dates updated in the site's Asia/Tehran timezone.
+- Independent SELECT confirmed the video page and serialized schema hashes. Stored native schema successfully unserialized after mutation.
+- Persistent server backup table navar_seo_root_backup_20261013 now has eleven before-value records; guarded rollback scripts protect later edits. A byte-exact private combined rollback bundle was delivered separately; it is not a full-site backup and is NOT committed here.
+- Public unparameterized canonical URLs of all nine articles returned HTTP200 with zero occurrences of the eight known bad product hrefs. Ardabil's ordinary URL returned HTTP200, rendered the player and emitted VideoObject with the accessible poster and PT57S. A cache-bypassed check also passed. No global cache deletion was needed or performed.
+- These are live-output and database checks, NOT a new Google crawl or Search Console validation result. Displaying a video on a city sales page does not guarantee watch-page/video indexing.
+- Exact native 301 handling of the eight external legacy aliases is still pending; internal source correction does not by itself repair external bookmarks. The rejected redirect plugin remains uninstalled. No unrelated 404s redirected.
+- Remaining separate work: legacy exact 301s through existing tools/configuration, mobile performance diagnosis, important unindexed content review and genuine noncritical product-schema data.
+- Public sync excludes snapshots, full article SQL payloads, serialized private backup values, session URLs, credentials and raw GSC exports. Existing translation live-status files remain untouched.

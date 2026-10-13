@@ -20,14 +20,18 @@
   "ardabil_video": {
     "post_id": 35373,
     "decision": "display_declared_video_on_page",
-    "native_schema_fix": "pending",
-    "live_deployment": "not_done"
+    "native_schema_fix": "deployed_and_hash_verified",
+    "live_deployment": "verified_on_unparameterized_public_url_http200",
+    "player": "native_controls_no_autoplay_preload_none",
+    "thumbnail": "genuine_frame_uploaded_http200_sha_verified",
+    "duration": "PT57S",
+    "video_indexing": "not_guaranteed_no_new_gsc_validation"
   },
   "root_cause_work": {
-    "status": "current_read_only_snapshot_verified_root_patch_pending",
+    "status": "article_href_and_native_video_repairs_deployed_live_verified",
     "do_not_change_existing_valid_product_permalinks": true,
     "native_wordpress_and_rankmath_edits_preferred": true,
-    "backup_snapshot_not_current_live_db": true,
+    "backup_snapshot_not_current_live_db": false,
     "backup_matching_records": 23,
     "published_candidate_posts": 9,
     "historical_revisions_excluded": 14,
@@ -47,14 +51,25 @@
     "current_articles_with_wrong_links": 9,
     "current_wrong_href_occurrences": 12,
     "manual_export_needed": false,
-    "verification_method": "secure_phpmyadmin_select_only",
-    "database_mutations": 0
+    "verification_method": "byte_exact_current_hex_sha_guarded_transactions_independent_select_and_public_canonical_html",
+    "database_mutations": 11,
+    "database_updated_post_records": 10,
+    "database_updated_meta_records": 1,
+    "persistent_before_value_backup_records": 11,
+    "article_href_replacements": 12,
+    "article_canonical_http200_count": 9,
+    "known_bad_product_href_occurrences_after_repair": 0,
+    "historical_revisions_changed": 0,
+    "existing_product_permalinks_changed": false,
+    "language_configuration_changed": false,
+    "external_legacy_alias_redirects": "pending_native_exact_301_no_new_redirect_plugin",
+    "global_cache_deletion": false
   },
   "next_steps": [
-    "Prepare guarded reversible root edits from current local snapshot",
-    "Correct original article hrefs without replacing unrelated text, translations, slugs or revisions",
-    "Display the approved video and set a real accessible thumbnail in native Rank Math data",
-    "After backup and scope checks apply and validate live results before GSC validation"
+    "Implement and verify exact native 301s for the eight externally used legacy aliases with backups; do not redirect unrelated 404s",
+    "Diagnose mobile LCP and INP independently",
+    "Review important unindexed content separately from feeds, query variants and intentional exclusions",
+    "Recheck Search Console after Google recrawls; current deployment is not a new GSC validation result"
   ],
   "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced"
 }
