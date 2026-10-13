@@ -24,16 +24,31 @@
     "live_deployment": "not_done"
   },
   "root_cause_work": {
-    "status": "investigating",
+    "status": "backup_root_findings_identified_current_export_needed",
     "do_not_change_existing_valid_product_permalinks": true,
     "native_wordpress_and_rankmath_edits_preferred": true,
-    "backup_snapshot_not_current_live_db": true
+    "backup_snapshot_not_current_live_db": true,
+    "backup_matching_records": 23,
+    "published_candidate_posts": 9,
+    "historical_revisions_excluded": 14,
+    "current_public_rest_verification": "failed_ssl_eof_no_write",
+    "candidate_article_ids": [
+      36975,
+      37219,
+      37889,
+      37891,
+      37907,
+      502145,
+      502146,
+      502187,
+      502188
+    ]
   },
   "next_steps": [
-    "Inventory exact wrong links in original data/code",
-    "Build reversible native remediation after current-state guards",
-    "Deploy with fresh backup and user-controlled execution",
-    "Verify live URLs, page player and JSON-LD before GSC validation"
+    "Obtain SELECT-only current export for nine candidate articles and Ardabil page/video metadata",
+    "Build guarded reversible native content and Rank Math changes; do not import old full content",
+    "Use existing redirect tooling only for confirmed external legacy aliases",
+    "Deploy and verify actual page video/thumbnail and 301→200 before any GSC validation"
   ],
   "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced"
 }

@@ -41,3 +41,12 @@
 
 ## Latest user decision
 The user explicitly prefers root-cause remediation rather than another wrapper plugin. The next fix should repair original data/code where wrong links are generated. The old redirect package remains an uninstalled fallback, not the chosen solution. Backup-derived findings must be distinguished from current live DB state.
+
+## Root-cause findings from the supplied backup (not current DB proof)
+- Eight wrong product aliases occur in 23 ha_posts content records: nine published articles and fourteen revisions. Revisions should not be edited as current content.
+- Published candidate IDs: 36975, 37219, 37889, 37891, 37907, 502145, 502146, 502187, 502188.
+- No corresponding matches were found in the supplied custom theme/plugin source, postmeta or options under the exact-string inventory. This is a bounded search, not proof no other producer exists.
+- Ardabil page ID35373 has no video/player marker in backup post_content. Native Rank Math metadata row11648 declares the existing MP4 and uses thumbnailUrl=%post_thumbnail%; live JSON-LD has no thumbnailUrl. Root remediation should update original content and native schema metadata, not add another runtime filter.
+- Public REST verification of the nine candidate posts failed with an SSL EOF; no write attempted. A small read-only current-state export is requested before preparing guarded native updates. Do not overwrite current content with old backup snapshots or run naive REPLACE on PHP-serialized metadata.
+- Diagnostic SQL is SELECT-only. Current export must remain local and never be committed to this public repository.
+- Full root remediation, thumbnail extraction and live deployment remain pending.
