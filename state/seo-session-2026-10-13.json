@@ -66,11 +66,10 @@
     "global_cache_deletion": false
   },
   "next_steps": [
-    "Verify/enable safe anonymous HTML page caching with WooCommerce, query-string and language exclusions, back up first, and test existing 301s/forms/price/language before and after",
-    "Repeat the same controlled mobile test after verifying actual cache HIT; do not claim improvement before measurement",
-    "Profile representative mobile interactions to diagnose field INP independently",
-    "Review important unindexed content separately from feeds/query variants and intentional exclusions",
-    "Recheck Search Console after Google recrawls; lab diagnosis is not a new GSC validation result"
+    "Root investigate/fix Persian Woo cart recommendation language filtering",
+    "Fix mobile cart remove-button overlap and retest ordinary user click",
+    "Continue remaining article LCP and uncached rendering investigation",
+    "Continue important unindexed content and genuine schema warnings; no new GSC field validation claim"
   ],
   "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced",
   "native_exact_legacy_301": {
@@ -98,7 +97,7 @@
     "status": "read_only_baseline_measured_root_hypotheses_recorded",
     "controlled_runs": 9,
     "selected_pages": 3,
-    "page_cache_change": "not_applied",
+    "page_cache_change": "activated_by_user_verified_public_cache",
     "wp_rocket_recent_active_list": "inactive",
     "field_inp_measurement": "not_available_no_fix_claim",
     "report": "docs/seo-mobile-performance-2026-10-13.md",
@@ -115,6 +114,26 @@
       "cpuSlowdown": 4,
       "browserCacheDisabled": true,
       "mode": "laboratory_not_field_INP"
-    }
+    },
+    "current_script_delay": "disabled_by_user_zero_delayed_tags_verified",
+    "final_controlled_runs": 9,
+    "final_metrics": "metrics/seo-mobile-rocket-no-delay-2026-10-13.csv",
+    "field_inp": "unmeasured_no_fix_claim"
+  },
+  "wp_rocket_verification": {
+    "status": "public_cache_and_no_delay_verified_cart_exceptions_pending",
+    "site_settings_changed_by_agent": false,
+    "public_repeat_cache_checks": 6,
+    "mobile_menu": "opens_and_closes",
+    "cart_test_product": 655,
+    "cart_test_quantity": 1,
+    "cart_final_items": 0,
+    "checkout": "HTTP200_private_no_cache_HTML_readonly_no_client_scripts",
+    "orders_payments": "none_submitted",
+    "logged_in_flow": "not_tested",
+    "confirmed_exceptions": [
+      "Persian empty-cart Fresh in store recommendation titles Russian/Cyrillic",
+      "Mobile cart remove button visually covered by price wrapper; normal click blocked; programmatic click used only to clean test item"
+    ]
   }
 }

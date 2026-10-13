@@ -47,3 +47,31 @@ TTFB شامل انتظار شبکه و پردازش پاسخ است؛ تمام �
 - https://navar-abyari.ir/%D9%85%DB%8C%D8%B2%D8%A7%D9%86-%D8%A8%D8%B1%D8%AF%D8%A7%D8%B4%D8%AA-%DB%8C%D9%88%D9%86%D8%AC%D9%87-%D8%AF%D8%B1-%D9%87%DA%A9%D8%AA%D8%A7%D8%B1/
 - https://navar-abyari.ir/
 - https://navar-abyari.ir/isfahan/%D9%86%D9%88%D8%A7%D8%B1-%D8%AA%DB%8C%D9%BE-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86-%D9%82%DB%8C%D9%85%D8%AA-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B1%D9%88%D9%84-1000-%D9%85%D8%AA%D8%B1%DB%8C/
+
+## Final verification: WP Rocket ON, Delay JavaScript OFF
+
+The user enabled existing WP Rocket and then disabled Delay JavaScript execution. Agent made no plugin/theme/settings changes. Interim delay-enabled measurements are not the current configuration. Current public HTML has zero rocketlazyloadscript tags on the three diagnostic pages.
+
+| Page | Before TTFB seconds | Current TTFB seconds | Before LCP seconds | Current LCP seconds |
+| --- | --- | --- | --- | --- |
+| مقالهٔ یونجه | 3.82 | 0.41 | 6.68 | 2.91 |
+| صفحهٔ اصلی | 1.62 | 0.41 | 2.89 | 2.19 |
+| صفحهٔ اصفهان | 1.61 | 0.40 | 2.94 | 2.17 |
+
+Medians of three navigations per page per phase; same Pixel5 viewport393x851/DPR2.75, latency150ms, download1.6Mbps, upload0.75Mbps, CPU4x, fresh browser-cache-disabled requests. Nine final runs, independent pandas/statistics medians reconciled. First slower alfalfa run retained (TTFB1.874s/LCP4.300s); its cause is not definitively assigned. Cache does not remove the cost of future uncached rendering.
+Repeated public requests show identical HTML and Last-Modified per page, cached@ marker and no dynamic WP Server-Timing. These support real public HTML caching. Sequential before/after diagnostic, not randomized causal attribution. INP is null/unmeasured, not zero; no new field Google/GSC validation. Dates are sample provenance, not daily trends; duration/day profiler hint is inapplicable. Resource bytes exclude navigation HTML and are not site traffic.
+
+### Regressions and bounded purchase-path checks
+- Five language homepages HTTP200 with correct language/direction; not proof every language-dependent product query is correct.
+- Native Ardabil video/schema/poster preserved. All eight selected aliases still GET/HEAD301, one hop to correct200; query404 and unrelated404/POST controls retained.
+- Mobile menu opens/closes with script delay off. No field INP claim.
+- Guest session initially not logged in, cart empty. Native product655 button added quantity1; filled cart confirmed correct product655 quantity1. No customer information entered.
+- Actual checkout link from filled cart points to /checkout/. HTML-only fetch HTTP200, private/no-cache, Woo Blocks checkout present. Checkout client scripts were deliberately not executed; no order or payment submitted. This is not end-to-end payment or logged-in testing.
+- Test item removed through the observed remove button DOM click; final Store cart GET confirms zero items and empty-cart text. No blanket cart/cookie reset.
+
+### Confirmed exceptions; NOT fixed yet
+1. Persian empty cart displays Russian/Cyrillic product titles in Fresh in store recommendations. Confirmed before and after cart test; earlier activation-phase empty cart already showed it, so it cannot be attributed to disabling DelayJS. Root cause needs Woo Blocks query/language filtering investigation; do not assume generic cache-language bleed.
+2. Mobile cart remove control is covered at its click point by wc-block-cart-item__total-price-and-sale-badge-wrapper; normal user-like click was blocked. Programmatic click used only to remove our own test item. Likely layout/CSS overlap, not a completed root-cause diagnosis. Needs root repair and ordinary touch/click retest.
+
+Next: inspect existing child theme and multilingual product filtering before minimal scoped cart repairs; retain backups, native301 block, cache exclusions and no-order boundary. Continue remaining article LCP and uncached rendering work afterward.
+Only sanitized navigation CSV is committed; raw HTML, cookies, session IDs, database backups and auth data remain private.

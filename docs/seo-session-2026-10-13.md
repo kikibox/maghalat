@@ -92,3 +92,10 @@ The user explicitly prefers root-cause remediation rather than another wrapper p
 - TTFB and LCP independently measured, no site changes. Recent active-plugin list excludes WP Rocket; stable public HTML-cache HIT not established.
 - Main LCP images already eager/high priority and font swap already configured. INP cannot be inferred from navigation Long Tasks; no INP fix claim.
 - Next execution: verify/enable safe public HTML cache with actual WooCommerce, language/query/cookie exclusions; backup and regression tests, then repeat comparable measurements.
+
+## Final cache/no-delay verification
+- User enabled WP Rocket and disabled Delay JavaScript; public output/cache verified. Nine comparable final mobile runs and before/after medians recorded in performance report and sanitized metrics.
+- Five home language attributes, Ardabil video/schema and eight exact301s preserved. Menu opens/closes.
+- Guest product655qty1 add-to-cart verified; checkout HTML200/private read-only. No order/payment or identity entry. Test item cleaned, cart empty.
+- Two unresolved root issues: Russian Fresh in store recommendation titles on Persian empty cart; mobile remove button covered by price wrapper. Programmatic removal used only for test cleanup, not evidence that ordinary remove clicks work.
+- No agent plugin/settings changes and no new GSC/field INP validation. Next investigate child-theme/Woo language-query and cart CSS before scoped repair.
