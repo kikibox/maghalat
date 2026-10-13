@@ -86,3 +86,9 @@ The user explicitly prefers root-cause remediation rather than another wrapper p
 - Backups and complete server configuration are private. Only the isolated new rule block and sanitized documentation are synced. Existing auto-generated translation status files remain untouched.
 - Fixed external handling for these eight selected aliases only. This does not mean all site404s are resolved, all GSC examples are fixed or Google has recrawled. No GSC Validate Fix clicked.
 - Next priority: independently diagnose mobile LCP/INP, then review important unindexed content and remaining real schema warnings.
+
+## Latest read-only mobile performance diagnosis
+- Nine controlled mobile navigations across the two prior GSC group examples and homepage; detailed method, medians, limits and cache safety plan: docs/seo-mobile-performance-2026-10-13.md.
+- TTFB and LCP independently measured, no site changes. Recent active-plugin list excludes WP Rocket; stable public HTML-cache HIT not established.
+- Main LCP images already eager/high priority and font swap already configured. INP cannot be inferred from navigation Long Tasks; no INP fix claim.
+- Next execution: verify/enable safe public HTML cache with actual WooCommerce, language/query/cookie exclusions; backup and regression tests, then repeat comparable measurements.

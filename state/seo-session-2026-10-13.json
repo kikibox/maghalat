@@ -66,9 +66,11 @@
     "global_cache_deletion": false
   },
   "next_steps": [
-    "Diagnose mobile LCP and INP independently",
-    "Review important unindexed content separately from feeds, query variants and intentional exclusions",
-    "Recheck Search Console after Google recrawls; current deployment is not a new GSC validation result"
+    "Verify/enable safe anonymous HTML page caching with WooCommerce, query-string and language exclusions, back up first, and test existing 301s/forms/price/language before and after",
+    "Repeat the same controlled mobile test after verifying actual cache HIT; do not claim improvement before measurement",
+    "Profile representative mobile interactions to diagnose field INP independently",
+    "Review important unindexed content separately from feeds/query variants and intentional exclusions",
+    "Recheck Search Console after Google recrawls; lab diagnosis is not a new GSC validation result"
   ],
   "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced",
   "native_exact_legacy_301": {
@@ -91,5 +93,28 @@
     "rank_math_redirection_module_activated": false,
     "additional_plugin_installed": false,
     "gsc_validation": "not_requested_no_new_google_crawl_claim"
+  },
+  "mobile_performance_diagnostic": {
+    "status": "read_only_baseline_measured_root_hypotheses_recorded",
+    "controlled_runs": 9,
+    "selected_pages": 3,
+    "page_cache_change": "not_applied",
+    "wp_rocket_recent_active_list": "inactive",
+    "field_inp_measurement": "not_available_no_fix_claim",
+    "report": "docs/seo-mobile-performance-2026-10-13.md",
+    "metrics": "metrics/seo-mobile-performance-2026-10-13.csv",
+    "conditions": {
+      "viewport": [
+        393,
+        851
+      ],
+      "dpr": 2.75,
+      "networkLatencyMs": 150,
+      "downloadMbps": 1.6,
+      "uploadMbps": 0.75,
+      "cpuSlowdown": 4,
+      "browserCacheDisabled": true,
+      "mode": "laboratory_not_field_INP"
+    }
   }
 }
