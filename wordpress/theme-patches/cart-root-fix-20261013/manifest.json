@@ -1,0 +1,25 @@
+[
+  {
+    "file": "navar.min.css",
+    "before_sha256": "4cadd59cab560d3beb19bcfbd9c2ce4f94962e8a760a37eaaaf79eab86c915e2",
+    "after_sha256": "4ae44a78062959e769577635de3ee4fa166f3f149dcf63a3572b9ad10b9b9c4b",
+    "excluded_selectors": 23
+  },
+  {
+    "file": "app.css",
+    "before_sha256": "0cb750a68139ab0f2117b938d8b71dc3d2204426f4dba6ffbeb26e4f052d4fd0",
+    "after_sha256": "f3f34e93e2e8290731090cd0cefb2f84388823e820a3b3cc794fddc62dab22eb",
+    "excluded_selectors": 6
+  },
+  {
+    "file": "pro.css",
+    "before_sha256": "b2257c1244b3eb058c8ecc0c7000e2af2ff0ea64c6991424d646ffd56c27cb2f",
+    "after_sha256": "8f1707777a1998aa9610449d3f0eb6084bae2c0e6b8d1bd87ee2ca4dbd2aa825",
+    "excluded_selectors": 17
+  },
+  {
+    "file": "woocommerce.php",
+    "before_sha256": "faa2f3ca5684730ea4b962179cacd69552661857c07265220fe080d07adecbfd",
+    "after_sha256": "43ef657218556ae9eb3ef79871133b4d9f27ee652e8a0ec397713453aee1ff42"
+  }
+]

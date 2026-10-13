@@ -1,0 +1,495 @@
+{
+  "language_outputs": [
+    {
+      "requested_language": "fa",
+      "http": "200",
+      "final_url": "https://navar-abyari.ir/cart/",
+      "html_lang": "fa-IR",
+      "dir": "rtl",
+      "titles": [
+        "لوله تاشو 160 میلیمتر (6 اینچ )",
+        "لوله تاشو 125 میلیمتر (5 اینچ )",
+        "لوله تاشو 110 میلیمتر (4 اینچ )",
+        "لوله تاشو 90 میلیمتر (۳/۵ اینچ)"
+      ],
+      "cache_control": [
+        "cache-control: no-cache, must-revalidate, max-age=0, private"
+      ]
+    },
+    {
+      "requested_language": "iraq",
+      "http": "200",
+      "final_url": "https://navar-abyari.ir/cart/?navar_lang=iraq",
+      "html_lang": "ar-IQ",
+      "dir": "rtl",
+      "titles": [
+        "خرطوم قابل للطي 6 بوصة، 160 ملم",
+        "خرطوم قابل للطي 5 بوصة، 125 ملم",
+        "خرطوم قابل للطي 4 بوصة، 110 ملم",
+        "خرطوم قابل للطي 3½ بوصة، 90 ملم"
+      ],
+      "cache_control": [
+        "cache-control: no-cache, must-revalidate, max-age=0, private"
+      ]
+    },
+    {
+      "requested_language": "tj",
+      "http": "200",
+      "final_url": "https://navar-abyari.ir/cart/?navar_lang=tj",
+      "html_lang": "tg-TJ",
+      "dir": "ltr",
+      "titles": [
+        "Қубури қатшавандаи 6 дюйм, 160 мм",
+        "Қубури қатшавандаи 5 дюйм, 125 мм",
+        "Қубури қатшавандаи 4 дюйм, 110 мм",
+        "Қубури қатшавандаи 3½ дюйм, 90 мм"
+      ],
+      "cache_control": [
+        "cache-control: no-cache, must-revalidate, max-age=0, private"
+      ]
+    },
+    {
+      "requested_language": "en",
+      "http": "200",
+      "final_url": "https://navar-abyari.ir/cart/?navar_lang=en",
+      "html_lang": "en-US",
+      "dir": "ltr",
+      "titles": [
+        "Layflat Hose 6 in, 160 mm",
+        "Layflat Hose 5 in, 125 mm",
+        "Layflat Hose 4 in, 110 mm",
+        "Layflat Hose 3½ in, 90 mm"
+      ],
+      "cache_control": [
+        "cache-control: no-cache, must-revalidate, max-age=0, private"
+      ]
+    },
+    {
+      "requested_language": "ru",
+      "http": "200",
+      "final_url": "https://navar-abyari.ir/cart/?navar_lang=ru",
+      "html_lang": "ru-RU",
+      "dir": "ltr",
+      "titles": [
+        "Плоский шланг 6 дюймов, 160 мм",
+        "Плоский шланг 5 дюймов, 125 мм",
+        "Плоский шланг 4 дюйма, 110 мм",
+        "Плоский шланг 3½ дюйма, 90 мм"
+      ],
+      "cache_control": [
+        "cache-control: no-cache, must-revalidate, max-age=0, private"
+      ]
+    }
+  ],
+  "mobile_and_desktop_cart": {
+    "public_css_sha256": "4ae44a78062959e769577635de3ee4fa166f3f149dcf63a3572b9ad10b9b9c4b",
+    "css_url": "https://navar-abyari.ir/wp-content/themes/navar-child-zamtar-reader/assets/css/navar.min.css?ver=1791929259",
+    "temporary_preview": false,
+    "filled_items": [
+      {
+        "id": 655,
+        "quantity": 1
+      }
+    ],
+    "viewport_checks": [
+      {
+        "buttonRect": {
+          "bottom": 533.265625,
+          "height": 24,
+          "left": 89,
+          "right": 113,
+          "top": 509.265625,
+          "width": 24,
+          "x": 89,
+          "y": 509.265625
+        },
+        "cells": [
+          {
+            "class": "wc-block-cart-item__image",
+            "rect": {
+              "bottom": 544.265625,
+              "height": 110.296875,
+              "left": 248,
+              "right": 312,
+              "top": 433.96875,
+              "width": 64,
+              "x": 248,
+              "y": 433.96875
+            }
+          },
+          {
+            "class": "wc-block-cart-item__product",
+            "rect": {
+              "bottom": 544.265625,
+              "height": 110.296875,
+              "left": 33,
+              "right": 232,
+              "top": 433.96875,
+              "width": 199,
+              "x": 33,
+              "y": 433.96875
+            }
+          },
+          {
+            "class": "wc-block-cart-item__total",
+            "rect": {
+              "bottom": 598.375,
+              "height": 42.109375,
+              "left": 134.9375,
+              "right": 232,
+              "top": 556.265625,
+              "width": 97.0625,
+              "x": 134.9375,
+              "y": 556.265625
+            }
+          }
+        ],
+        "clientWidth": 345,
+        "cssVersion": "https://navar-abyari.ir/wp-content/themes/navar-child-zamtar-reader/assets/css/navar.min.css?ver=1791929259",
+        "documentWidth": 345,
+        "normalClickAvailable": true,
+        "rowRect": {
+          "bottom": 614.375,
+          "height": 196.40625,
+          "left": 33,
+          "right": 312,
+          "top": 417.96875,
+          "width": 279,
+          "x": 33,
+          "y": 417.96875
+        },
+        "viewport": 360
+      },
+      {
+        "buttonRect": {
+          "bottom": 530.875,
+          "height": 24,
+          "left": 122,
+          "right": 146,
+          "top": 506.875,
+          "width": 24,
+          "x": 122,
+          "y": 506.875
+        },
+        "cells": [
+          {
+            "class": "wc-block-cart-item__image",
+            "rect": {
+              "bottom": 541.875,
+              "height": 110.296875,
+              "left": 281,
+              "right": 345,
+              "top": 431.578125,
+              "width": 64,
+              "x": 281,
+              "y": 431.578125
+            }
+          },
+          {
+            "class": "wc-block-cart-item__product",
+            "rect": {
+              "bottom": 541.875,
+              "height": 110.296875,
+              "left": 33,
+              "right": 265,
+              "top": 431.578125,
+              "width": 232,
+              "x": 33,
+              "y": 431.578125
+            }
+          },
+          {
+            "class": "wc-block-cart-item__total",
+            "rect": {
+              "bottom": 595.984375,
+              "height": 42.109375,
+              "left": 167.9375,
+              "right": 265,
+              "top": 553.875,
+              "width": 97.0625,
+              "x": 167.9375,
+              "y": 553.875
+            }
+          }
+        ],
+        "clientWidth": 378,
+        "cssVersion": "https://navar-abyari.ir/wp-content/themes/navar-child-zamtar-reader/assets/css/navar.min.css?ver=1791929259",
+        "documentWidth": 378,
+        "normalClickAvailable": true,
+        "rowRect": {
+          "bottom": 611.984375,
+          "height": 196.40625,
+          "left": 33,
+          "right": 345,
+          "top": 415.578125,
+          "width": 312,
+          "x": 33,
+          "y": 415.578125
+        },
+        "viewport": 393
+      },
+      {
+        "buttonRect": {
+          "bottom": 536.359375,
+          "height": 24,
+          "left": 349,
+          "right": 373,
+          "top": 512.359375,
+          "width": 24,
+          "x": 349,
+          "y": 512.359375
+        },
+        "cells": [
+          {
+            "class": "wc-block-cart-item__image",
+            "rect": {
+              "bottom": 547.359375,
+              "height": 110.296875,
+              "left": 508,
+              "right": 572,
+              "top": 437.0625,
+              "width": 64,
+              "x": 508,
+              "y": 437.0625
+            }
+          },
+          {
+            "class": "wc-block-cart-item__product",
+            "rect": {
+              "bottom": 547.359375,
+              "height": 110.296875,
+              "left": 33,
+              "right": 492,
+              "top": 437.0625,
+              "width": 459,
+              "x": 33,
+              "y": 437.0625
+            }
+          },
+          {
+            "class": "wc-block-cart-item__total",
+            "rect": {
+              "bottom": 601.46875,
+              "height": 42.109375,
+              "left": 394.9375,
+              "right": 492,
+              "top": 559.359375,
+              "width": 97.0625,
+              "x": 394.9375,
+              "y": 559.359375
+            }
+          }
+        ],
+        "clientWidth": 605,
+        "cssVersion": "https://navar-abyari.ir/wp-content/themes/navar-child-zamtar-reader/assets/css/navar.min.css?ver=1791929259",
+        "documentWidth": 605,
+        "normalClickAvailable": true,
+        "rowRect": {
+          "bottom": 617.46875,
+          "height": 196.40625,
+          "left": 33,
+          "right": 572,
+          "top": 421.0625,
+          "width": 539,
+          "x": 33,
+          "y": 421.0625
+        },
+        "viewport": 620
+      },
+      {
+        "buttonRect": {
+          "bottom": 542.1875,
+          "height": 24,
+          "left": 459.25,
+          "right": 483.25,
+          "top": 518.1875,
+          "width": 24,
+          "x": 459.25,
+          "y": 518.1875
+        },
+        "cells": [
+          {
+            "class": "wc-block-cart-item__image",
+            "rect": {
+              "bottom": 553.1875,
+              "height": 110.296875,
+              "left": 618.25,
+              "right": 698.25,
+              "top": 442.890625,
+              "width": 80,
+              "x": 618.25,
+              "y": 442.890625
+            }
+          },
+          {
+            "class": "wc-block-cart-item__product",
+            "rect": {
+              "bottom": 553.1875,
+              "height": 110.296875,
+              "left": 295.578125,
+              "right": 602.25,
+              "top": 442.890625,
+              "width": 306.671875,
+              "x": 295.578125,
+              "y": 442.890625
+            }
+          },
+          {
+            "class": "wc-block-cart-item__total",
+            "rect": {
+              "bottom": 553.1875,
+              "height": 110.296875,
+              "left": 54.75,
+              "right": 279.578125,
+              "top": 442.890625,
+              "width": 224.828125,
+              "x": 54.75,
+              "y": 442.890625
+            }
+          }
+        ],
+        "clientWidth": 753,
+        "cssVersion": "https://navar-abyari.ir/wp-content/themes/navar-child-zamtar-reader/assets/css/navar.min.css?ver=1791929259",
+        "documentWidth": 753,
+        "normalClickAvailable": true,
+        "rowRect": {
+          "bottom": 569.1875,
+          "height": 142.296875,
+          "left": 54.75,
+          "right": 698.25,
+          "top": 426.890625,
+          "width": 643.5,
+          "x": 54.75,
+          "y": 426.890625
+        },
+        "viewport": 768
+      },
+      {
+        "buttonRect": {
+          "bottom": 693.109375,
+          "height": 24,
+          "left": 885.671875,
+          "right": 909.671875,
+          "top": 669.109375,
+          "width": 24,
+          "x": 885.671875,
+          "y": 669.109375
+        },
+        "cells": [
+          {
+            "class": "wc-block-cart-item__image",
+            "rect": {
+              "bottom": 724.109375,
+              "height": 151.296875,
+              "left": 1028.671875,
+              "right": 1108.671875,
+              "top": 572.8125,
+              "width": 80,
+              "x": 1028.671875,
+              "y": 572.8125
+            }
+          },
+          {
+            "class": "wc-block-cart-item__product",
+            "rect": {
+              "bottom": 724.109375,
+              "height": 151.296875,
+              "left": 632.78125,
+              "right": 1028.671875,
+              "top": 572.8125,
+              "width": 395.890625,
+              "x": 632.78125,
+              "y": 572.8125
+            }
+          },
+          {
+            "class": "wc-block-cart-item__total",
+            "rect": {
+              "bottom": 655.921875,
+              "height": 83.109375,
+              "left": 532.78125,
+              "right": 632.78125,
+              "top": 572.8125,
+              "width": 100,
+              "x": 532.78125,
+              "y": 572.8125
+            }
+          }
+        ],
+        "clientWidth": 1265,
+        "cssVersion": "https://navar-abyari.ir/wp-content/themes/navar-child-zamtar-reader/assets/css/navar.min.css?ver=1791929259",
+        "documentWidth": 1265,
+        "normalClickAvailable": true,
+        "rowRect": {
+          "bottom": 724.109375,
+          "height": 151.296875,
+          "left": 532.78125,
+          "right": 1108.671875,
+          "top": 572.8125,
+          "width": 575.890625,
+          "x": 532.78125,
+          "y": 572.8125
+        },
+        "viewport": 1280
+      }
+    ],
+    "removed_with_normal_browser_click": true,
+    "final": {
+      "emptyText": true,
+      "itemCount": 0,
+      "titles": [
+        "لوله تاشو 160 میلیمتر (6 اینچ )",
+        "لوله تاشو 125 میلیمتر (5 اینچ )",
+        "لوله تاشو 110 میلیمتر (4 اینچ )",
+        "لوله تاشو 90 میلیمتر (۳/۵ اینچ)"
+      ]
+    },
+    "order_or_payment_submitted": false,
+    "checkout_client_scripts_executed": false
+  },
+  "deployment": [
+    {
+      "file": "app.css",
+      "backup_verified": true
+    },
+    {
+      "file": "pro.css",
+      "backup_verified": true
+    },
+    {
+      "file": "navar.min.css",
+      "backup_verified": true
+    },
+    {
+      "file": "app.css",
+      "deployed_sha256": "f3f34e93e2e8290731090cd0cefb2f84388823e820a3b3cc794fddc62dab22eb",
+      "exact_match": true
+    },
+    {
+      "file": "pro.css",
+      "deployed_sha256": "8f1707777a1998aa9610449d3f0eb6084bae2c0e6b8d1bd87ee2ca4dbd2aa825",
+      "exact_match": true
+    },
+    {
+      "file": "navar.min.css",
+      "deployed_sha256": "4ae44a78062959e769577635de3ee4fa166f3f149dcf63a3572b9ad10b9b9c4b",
+      "exact_match": true
+    },
+    {
+      "file": "woocommerce.php",
+      "deployed_sha256": "43ef657218556ae9eb3ef79871133b4d9f27ee652e8a0ec397713453aee1ff42",
+      "exact_match": true
+    }
+  ],
+  "generated_css_verified": {
+    "cssHttp": 200,
+    "delayedScripts": 0,
+    "exclusion": true,
+    "http": 200,
+    "mobileRule": true,
+    "url": "https://navar-abyari.ir/wp-content/cache/min/1/wp-content/themes/navar-child-zamtar-reader/assets/css/navar.min.css?ver=1791929666"
+  },
+  "redirects_passed": 8,
+  "settings_mutations": false,
+  "database_mutations": false
+}

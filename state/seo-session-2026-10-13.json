@@ -66,10 +66,10 @@
     "global_cache_deletion": false
   },
   "next_steps": [
-    "Root investigate/fix Persian Woo cart recommendation language filtering",
-    "Fix mobile cart remove-button overlap and retest ordinary user click",
-    "Continue remaining article LCP and uncached rendering investigation",
-    "Continue important unindexed content and genuine schema warnings; no new GSC field validation claim"
+    "Reopen live GSC browser reports with user approval; MCP sites_list schema error not resolved",
+    "Prioritize important product/category/article URLs among discovered/crawled-not-indexed, excluding feeds and intentional noindex",
+    "Continue remaining article LCP and uncached rendering; do not claim new field-INP validation",
+    "Address genuine product schema warnings only with real shipping/returns/review data"
   ],
   "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced",
   "native_exact_legacy_301": {
@@ -121,7 +121,7 @@
     "field_inp": "unmeasured_no_fix_claim"
   },
   "wp_rocket_verification": {
-    "status": "public_cache_and_no_delay_verified_cart_exceptions_pending",
+    "status": "cart_language_and_mobile_overlap_root_fixed_and_verified",
     "site_settings_changed_by_agent": false,
     "public_repeat_cache_checks": 6,
     "mobile_menu": "opens_and_closes",
@@ -131,9 +131,45 @@
     "checkout": "HTTP200_private_no_cache_HTML_readonly_no_client_scripts",
     "orders_payments": "none_submitted",
     "logged_in_flow": "not_tested",
-    "confirmed_exceptions": [
-      "Persian empty-cart Fresh in store recommendation titles Russian/Cyrillic",
-      "Mobile cart remove button visually covered by price wrapper; normal click blocked; programmatic click used only to clean test item"
-    ]
+    "confirmed_exceptions": []
+  },
+  "cart_root_repairs": {
+    "status": "deployed_and_verified",
+    "new_plugin": false,
+    "database_mutations": false,
+    "files_changed": [
+      "inc/woocommerce.php",
+      "assets/css/app.css",
+      "assets/css/pro.css",
+      "assets/css/navar.min.css"
+    ],
+    "cart_recommendation_languages": [
+      "fa-IR",
+      "ar-IQ",
+      "tg-TJ",
+      "en-US",
+      "ru-RU"
+    ],
+    "normal_remove_click_verified": true,
+    "viewport_widths": [
+      360,
+      393,
+      620,
+      768,
+      1280
+    ],
+    "test_product": 655,
+    "test_quantity": 1,
+    "final_cart_items": 0,
+    "order_or_payment_submitted": false,
+    "backups": "exact_private_zip_and_server_home_outside_public_html",
+    "cache": "only_generated_domain_HTML_and_this_theme_minified_CSS_regenerated",
+    "report": "docs/seo-cart-root-fix-2026-10-13.md"
+  },
+  "gsc_refresh_attempt": {
+    "status": "MCP_output_schema_error_permissionLevel",
+    "new_coverage_data_obtained": false,
+    "permission_deficiency_proven": false,
+    "last_comprehensive_pages_report_updated": "2026-10-08"
   }
 }

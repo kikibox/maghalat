@@ -75,3 +75,6 @@ Repeated public requests show identical HTML and Last-Modified per page, cached@
 
 Next: inspect existing child theme and multilingual product filtering before minimal scoped cart repairs; retain backups, native301 block, cache exclusions and no-order boundary. Continue remaining article LCP and uncached rendering work afterward.
 Only sanitized navigation CSV is committed; raw HTML, cookies, session IDs, database backups and auth data remain private.
+
+## Cart exceptions subsequently resolved
+The two exceptions above are historical: both were root-fixed and independently verified later this session. See docs/seo-cart-root-fix-2026-10-13.md. No new performance benchmark or Google field validation was run in that repair phase.

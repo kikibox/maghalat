@@ -1,0 +1,8 @@
+/* Keep the Woo Blocks mobile row in two explicit columns; never create an
+   implicit total-price column over the quantity/remove controls in RTL. */
+@media (max-width:700px){
+body.woocommerce-cart .wp-block-woocommerce-cart .wc-block-cart table.wc-block-cart-items .wc-block-cart-items__row{grid-template-columns:64px minmax(0,1fr);row-gap:12px;width:100%;min-width:0;box-sizing:border-box}
+body.woocommerce-cart .wp-block-woocommerce-cart .wc-block-cart table.wc-block-cart-items .wc-block-cart-item__image{grid-column:1;grid-row:1;min-width:0}
+body.woocommerce-cart .wp-block-woocommerce-cart .wc-block-cart table.wc-block-cart-items .wc-block-cart-item__product{grid-column:2;grid-row:1;min-width:0}
+body.woocommerce-cart .wp-block-woocommerce-cart .wc-block-cart table.wc-block-cart-items .wc-block-cart-item__total{grid-column:2;grid-row:2;min-width:0;justify-self:start}
+}
