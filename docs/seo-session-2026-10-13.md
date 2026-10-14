@@ -106,3 +106,22 @@ User asked other GSC issues: sites_list refresh failed on output-schema permissi
 
 ## Live GSC readonly review completed
 Authenticated browser session available. Pages still shows Oct8 aggregate data; CWV/Product/Merchant reports Oct11. Current stored inspection confirms core Persian canonical products35011/37849 unknown to Google although reachable200/index/self-canonical/in current sitemap with category links. Arabic501917 is already indexed despite stale aggregate Crawled-not-indexed row. Current product sitemap158URLs;GSC last-read Oct7 shows46. Category sitemapSuccess25,readOct14. Captured457/457Crawled and1000/2184Discovered examples;18bounded live technical checks. No site changes, sitemap submit, request indexing, live test or validation performed. Suggested next with user confirmation:resubmit existing product sitemap and selectively request two verified canonical URLs;then truthful product schema cleanup. Details docs/seo-gsc-live-review.md.
+
+
+## نتیجهٔ مرحلهٔ تأییدشدهٔ ارسال سایت‌مپ و بازبینی ایندکس
+
+این مرحله پس از تأیید صریح کاربر اجرا شد و جایگزین وضعیت «هنوز اجرا نشده» برای ارسال سایت‌مپ است.
+
+- ارسال مجدد همان `https://navar-abyari.ir/product-sitemap.xml` با پیام صریح **Sitemap submitted successfully** تأیید شد. ردیف موجود سپس Success، تاریخ ارسال/آخرین خواندن ۱۴ اکتبر ۲۰۲۶ و ۷۶ Discovered pages نشان داد. XML عمومی در پیش‌آزمون ۱۵۸ URL داشت. این اعداد به معنی تعداد صفحات ایندکس‌شده یا تکمیل پردازش همهٔ URLها نیستند.
+- برای محصول 35011 (لوله نخدار ۱۲۵ میلی‌متر) دکمهٔ Request indexing فقط یک بار زده شد. بررسی خودکار شروع شد؛ مرورگر پیش از مشاهدهٔ پیام پذیرش نهایی اتصالش را از دست داد. بنابراین پذیرش نهایی خودِ درخواست تأیید نشده است. پس از بازیابی، بازرسی دقیق همان کنونیکال **URL is on Google / Page is indexed** نشان داد. خزش مجاز، دریافت موفق و ایندکس مجاز بود؛ Google-selected canonical همان Inspected URL است. Last crawl در رابط ۱۴ اکتبر ۲۰۲۶، ۱۴:۲۵:۲۳ نمایش داده شد؛ منطقهٔ زمانی رابط مشخص نشده و تبدیل نشده است. درخواست تکراری ارسال نشد.
+- برای محصول 37849 (لوله تاشو ۱۲۵ میلی‌متر / ۵ اینچ)، بازرسی تازه پیش از هر درخواست **URL is on Google / Page is indexed** نشان داد. خزش مجاز، دریافت موفق و ایندکس مجاز بود؛ Google-selected canonical همان Inspected URL است. Last crawl در رابط ۱۱ اکتبر ۲۰۲۶، ۱۲:۵۷:۰۴ بود. چون ایندکس تأیید شد، هیچ درخواست ایندکس برای این محصول ارسال نشد.
+- هر دو آدرس در پیش‌آزمون HTTP 200، robots index، کنونیکال خودارجاع و حضور در سایت‌مپ فعلی داشتند. نمایش قبلی unknown برای این دو محصول با نتیجهٔ فعلی جایگزین شده است؛ علت تغییر یا رابطهٔ علّی با ارسال سایت‌مپ/درخواست ادعا نمی‌شود.
+- No referring sitemaps detected هنوز در بخش Discovery هر دو بازرسی دیده شد؛ با وجود Page is indexed، آن را به معنی ایندکس‌نشدن یا نبود URL در XML تلقی نمی‌کنیم.
+- این مرحله هیچ تغییری در پایگاه داده، قالب، افزونه‌ها، تنظیمات زبان یا ریدایرکت‌ها ایجاد نکرد. Validate fix، حذف URL، درخواست انبوه یا درخواست برای صفحات دیگر اجرا نشد.
+
+### کارهای باز بعدی
+- پیگیری دادهٔ میدانی Core Web Vitals موبایل؛ گزارش قبلی همچنان ۴۶۲ URL ضعیف داشت و از این دو بازرسی رفع آن نتیجه نمی‌شود.
+- اصلاح هشدارهای غیرحیاتی اسکیما با اطلاعات واقعی ارسال و مرجوعی؛ بدون ساخت امتیاز، نظر یا تاریخ جعلی.
+- بررسی 404های مهم و محتوای اصلی با تشخیص مقصد معادل واقعی؛ بدون ریدایرکت یا noindex انبوه.
+
+حریم خصوصی: فقط خلاصهٔ عملیاتی و URL عمومی ثبت شده‌اند؛ حساب، کوکی، شناسهٔ بازرسی، URL جلسه، HTML و خروجی خام منتشر نشده‌اند.
