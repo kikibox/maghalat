@@ -66,10 +66,9 @@
     "global_cache_deletion": false
   },
   "next_steps": [
-    "Reopen live GSC browser reports with user approval; MCP sites_list schema error not resolved",
-    "Prioritize important product/category/article URLs among discovered/crawled-not-indexed, excluding feeds and intentional noindex",
-    "Continue remaining article LCP and uncached rendering; do not claim new field-INP validation",
-    "Address genuine product schema warnings only with real shipping/returns/review data"
+    "Targeted resubmit current product sitemap, then selective request indexing for the two confirmed reachable Persian canonical product URLs; obtain user confirmation because this pass was explicitly read-only",
+    "Root schema cleanup from actual business facts: shippingDetails and hasMerchantReturnPolicy; do not invent validFrom or reviews",
+    "Continue important content review; do not blanket redirect/noindex all excluded examples"
   ],
   "privacy": "No full DB dump, credentials, browser session, raw private GSC data or user/account identifiers synced",
   "native_exact_legacy_301": {
@@ -167,9 +166,29 @@
     "report": "docs/seo-cart-root-fix-2026-10-13.md"
   },
   "gsc_refresh_attempt": {
-    "status": "MCP_output_schema_error_permissionLevel",
-    "new_coverage_data_obtained": false,
-    "permission_deficiency_proven": false,
-    "last_comprehensive_pages_report_updated": "2026-10-08"
+    "status": "browser_readonly_live_reports_and_three_product_inspections_completed",
+    "MCP_sites_list": "output_schema_permissionLevel_error_not_permission_diagnosis",
+    "pages_report_last_updated": "2026-10-08",
+    "CWV_and_product_reports_last_updated": "2026-10-11",
+    "crawled_examples": 457,
+    "discovered_examples_captured": 1000,
+    "discovered_reported": 2184,
+    "technical_live_checks": 18,
+    "current_product_sitemap_urls": 158,
+    "gsc_product_sitemap_discovered_urls": 46,
+    "gsc_product_sitemap_last_read": "2026-10-07",
+    "priority_unknown_product_ids": [
+      35011,
+      37849
+    ],
+    "aggregate_crawled_but_individually_indexed_product_id": 501917,
+    "mutations": {
+      "site_changes": false,
+      "sitemap_submit": false,
+      "request_indexing": false,
+      "live_test": false,
+      "validate_fix": false
+    },
+    "report": "docs/seo-gsc-live-review.md"
   }
 }
