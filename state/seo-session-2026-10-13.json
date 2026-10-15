@@ -571,5 +571,33 @@
     "validate_fix": false,
     "request_indexing": false,
     "next": "Freshly inspect other GSC crawl/indexing issues; retain optional Offer warnings rather than fabricate commercial facts"
+  },
+  "indexing_live_review": {
+    "status": "read_only_triage_complete_targeted_remediation_pending",
+    "report": "docs/seo-indexing-live-review.md",
+    "evidence": "metrics/seo-indexing-live-review.json",
+    "sample_rows": 2930,
+    "unique_urls": 2930,
+    "partial_groups": [
+      "robots",
+      "discovered"
+    ],
+    "public_selected_checks": 57,
+    "link_sources_checked": 27,
+    "en35006_indexed": true,
+    "tj_category_live_indexable": true,
+    "tj_category_indexed_confirmed": false,
+    "legacy75": {
+      "source": "https://navar-abyari.ir/product/%D9%84%D9%88%D9%84%D9%87-%D9%86%D8%AE-%D8%AF%D8%A7%D8%B1-75-%D9%85%DB%8C%D9%84%D9%85%D8%AA%D8%B1/",
+      "target": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae-%d8%af%d8%a7%d8%b1-75-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "target_product_id": 35005,
+      "target_http": 200,
+      "target_h1": "لوله نخ دار 75 میلیمتر"
+    },
+    "legacy75_remediation_applied": false,
+    "new_site_changes": false,
+    "request_indexing": false,
+    "validate_fix": false,
+    "next": "DB/content reference search for legacy75 alias, repair existing references, then exact301 to verified product35005; preserve canonical product URL and system endpoint security"
   }
 }
