@@ -427,5 +427,39 @@
       1280
     ],
     "foreign_floating_html_omitted": true
+  },
+  "schema_root_fix_stage2": {
+    "status": "deployed_final_public_samples_verified",
+    "report": "docs/seo-schema-root-fix-stage2.md",
+    "modified_file": "inc/schema.php",
+    "language_hook": "rank_math/schema/validated_data",
+    "language_hook_priority": "PHP_INT_MAX",
+    "shared_website_organization_unchanged": true,
+    "price_date_scope": "simple_product_single_Offer_only",
+    "unsourced_default_end_date_removed": true,
+    "explicit_or_actual_end_dates_preserved": true,
+    "valid_from_only_if_real_active_sale_matches_price_currency": true,
+    "variable_aggregate_list_offers_untouched": true,
+    "local_assertions": 61,
+    "php_lint": true,
+    "independent_readback_match": true,
+    "public_sample_count": 6,
+    "five_languages_product_family_verified": true,
+    "english_policy_article_verified": true,
+    "unrelated_graph_exact_match": true,
+    "bale_and_phone_preserved": true,
+    "native_wp_rocket_page_cache_purges": 3,
+    "wp_rocket_settings_changed": false,
+    "gsc_recheck": false,
+    "validate_fix": false,
+    "rich_results_test": false,
+    "request_indexing": false,
+    "remaining": [
+      "return_policy_schema",
+      "shippingDetails_without_fabricated_rates",
+      "category_warning_cause",
+      "missing_validFrom_without_real_price_start",
+      "variable_product_date_mapping"
+    ]
   }
 }

@@ -1,0 +1,57 @@
+--- a/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
++++ b/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
+@@ -14,3 +14,54 @@
+     return navar_enrich_product_structured_data($entity, $product, false);
+ }
+ add_filter('rank_math/snippet/rich_snippet_product_entity','navar_rank_math_product_structured_data',90);
++
++/** Localize page/content entities, not the shared WebSite or Organization. */
++function navar_rank_math_page_entity_language( $data ) {
++    if ( is_admin() || ! is_array($data) || ! function_exists('navar_lang') ) return $data;
++    $languages = array('fa'=>'fa-IR', 'iraq'=>'ar-IQ', 'tj'=>'tg-TJ', 'en'=>'en-US', 'ru'=>'ru-RU');
++    $lang = navar_lang();
++    if ( ! isset($languages[$lang]) ) return $data;
++    $page_types = array('WebPage','ItemPage','AboutPage','ContactPage','CollectionPage','SearchResultsPage','FAQPage','QAPage','Article','BlogPosting','NewsArticle');
++    $wrapped = isset($data['@graph']) && is_array($data['@graph']);
++    $nodes = $wrapped ? $data['@graph'] : $data;
++    foreach ( $nodes as &$entity ) {
++        if ( ! is_array($entity) || empty($entity['@type']) ) continue;
++        if ( array_intersect((array)$entity['@type'], $page_types) ) {
++            $entity['inLanguage'] = $languages[$lang];
++        }
++    }
++    unset($entity);
++    if ( $wrapped ) $data['@graph'] = $nodes; else $data = $nodes;
++    return $data;
++}
++// Apply to the final validated graph, after Rank Math connects content entities.
++add_filter('rank_math/schema/validated_data', 'navar_rank_math_page_entity_language', PHP_INT_MAX);
++
++/** Remove only Rank Math's unsourced simple-product end-of-next-year default. */
++function navar_rank_math_product_price_dates( $entity ) {
++    if ( is_admin() || ! is_array($entity) || ! function_exists('is_product') || ! is_product() || ! function_exists('wc_get_product') ) return $entity;
++    $product = wc_get_product(get_queried_object_id());
++    // Variable/AggregateOffer and variant pricing need their own per-variation mapping.
++    if ( ! $product instanceof WC_Product || ! $product->is_type('simple') || empty($entity['offers']) || ! is_array($entity['offers']) ) return $entity;
++    $offer = $entity['offers'];
++    if ( ! isset($offer['@type']) || 'Offer' !== $offer['@type'] ) return $entity;
++    $end = $product->get_date_on_sale_to();
++    $fallback = gmdate('Y-12-31', time() + YEAR_IN_SECONDS);
++    if ( ! $end && isset($offer['priceValidUntil']) && $fallback === $offer['priceValidUntil'] ) {
++        unset($offer['priceValidUntil']);
++    }
++    // A product publication/edit timestamp is not a price start date.
++    $start = $product->get_date_on_sale_from();
++    $now = time();
++    if ( $product->is_on_sale() && $start && $start->getTimestamp() <= $now
++        && ( ! $end || $end->getTimestamp() >= $now )
++        && empty($offer['validFrom']) && isset($offer['price'], $offer['priceCurrency'])
++        && get_woocommerce_currency() === $offer['priceCurrency']
++        && is_numeric($offer['price']) && is_numeric($product->get_price())
++        && abs((float)$offer['price'] - (float)$product->get_price()) < 0.00001 ) {
++        $offer['validFrom'] = gmdate('c', $start->getTimestamp());
++    }
++    $entity['offers'] = $offer;
++    return $entity;
++}
++add_filter('rank_math/snippet/rich_snippet_product_entity', 'navar_rank_math_product_price_dates', 95);

@@ -1,0 +1,159 @@
+{
+  "samples": [
+    {
+      "language": "fa-IR",
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "http": 200,
+      "html_lang": "fa-IR",
+      "page_languages": [
+        {
+          "type": "ItemPage",
+          "language": "fa-IR"
+        }
+      ],
+      "product_count": 1,
+      "unrelated_graph_unchanged": true,
+      "footer_bale": 1,
+      "floating_bale": 1,
+      "pass": true,
+      "offer_price_fields": [
+        {
+          "price": "5750000",
+          "priceCurrency": "IRR",
+          "priceValidUntil": null,
+          "validFrom": null
+        }
+      ]
+    },
+    {
+      "language": "ru-RU",
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "http": 200,
+      "html_lang": "ru-RU",
+      "page_languages": [
+        {
+          "type": "ItemPage",
+          "language": "ru-RU"
+        }
+      ],
+      "product_count": 1,
+      "unrelated_graph_unchanged": true,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true,
+      "offer_price_fields": [
+        {
+          "price": "5750000",
+          "priceCurrency": "IRR",
+          "priceValidUntil": null,
+          "validFrom": null
+        }
+      ]
+    },
+    {
+      "language": "en-US",
+      "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "http": 200,
+      "html_lang": "en-US",
+      "page_languages": [
+        {
+          "type": "ItemPage",
+          "language": "en-US"
+        }
+      ],
+      "product_count": 1,
+      "unrelated_graph_unchanged": true,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true,
+      "offer_price_fields": [
+        {
+          "price": "5750000",
+          "priceCurrency": "IRR",
+          "priceValidUntil": null,
+          "validFrom": null
+        }
+      ]
+    },
+    {
+      "language": "ar-IQ",
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "http": 200,
+      "html_lang": "ar-IQ",
+      "page_languages": [
+        {
+          "type": "ItemPage",
+          "language": "ar-IQ"
+        }
+      ],
+      "product_count": 1,
+      "unrelated_graph_unchanged": true,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true,
+      "offer_price_fields": [
+        {
+          "price": "5750000",
+          "priceCurrency": "IRR",
+          "priceValidUntil": null,
+          "validFrom": null
+        }
+      ]
+    },
+    {
+      "language": "tg-TJ",
+      "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "http": 200,
+      "html_lang": "tg-TJ",
+      "page_languages": [
+        {
+          "type": "ItemPage",
+          "language": "tg-TJ"
+        }
+      ],
+      "product_count": 1,
+      "unrelated_graph_unchanged": true,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true,
+      "offer_price_fields": [
+        {
+          "price": "5750000",
+          "priceCurrency": "IRR",
+          "priceValidUntil": null,
+          "validFrom": null
+        }
+      ]
+    },
+    {
+      "language": "en-policy",
+      "url": "https://navar-abyari.ir/en-us-terms/",
+      "http": 200,
+      "html_lang": "en-US",
+      "page_languages": [
+        {
+          "type": "WebPage",
+          "language": "en-US"
+        },
+        {
+          "type": "Article",
+          "language": "en-US"
+        }
+      ],
+      "product_count": 0,
+      "unrelated_graph_unchanged": true,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true,
+      "offer_price_fields": []
+    }
+  ],
+  "files": {
+    "before-schema.php": "d9cec82ce5f55f17ec20376a397c0a7a9cb82fe1054fed9b50e583bb147955c6",
+    "after-schema.php": "aaedb3e31e1385ccd922e56297a2b88eb519072cb20c1a74dc4f53c0b707d2f0",
+    "verified-schema.php": "aaedb3e31e1385ccd922e56297a2b88eb519072cb20c1a74dc4f53c0b707d2f0"
+  },
+  "local_assertions": 61,
+  "all_final_public_tests_passed": true,
+  "gsc_recheck": false
+}
