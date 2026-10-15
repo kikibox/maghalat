@@ -1,0 +1,369 @@
+{
+  "google_live": {
+    "url": "https://navar-abyari.ir/product/ru-ru-product-37849/",
+    "test": "Search Console native URL Inspection LIVE TEST / Merchant listings",
+    "before": {
+      "valid_items": 1,
+      "noncritical_issues": 3,
+      "category_warning": true,
+      "category": "Плоский шланг без армирования",
+      "crawl_display": "Oct 15, 2026, 3:11:30 PM"
+    },
+    "after": {
+      "valid_items": 1,
+      "noncritical_issues": 2,
+      "category_warning": false,
+      "category": {
+        "@type": "CategoryCode",
+        "codeValue": "2570"
+      },
+      "crawl_display": "Oct 15, 2026, 3:18:14 PM"
+    },
+    "remaining": [
+      "Missing field shippingDetails (optional), Offer",
+      "Missing field hasMerchantReturnPolicy (optional), Offer"
+    ],
+    "organization_return_policies_recognized": true,
+    "validate_fix_clicked": false,
+    "request_indexing_clicked": false,
+    "scope": "Google live test is one selected URL, not a claim all27 have been recrawled"
+  },
+  "files": {
+    "before-schema.php": "1f3f84ea4b16e5a47c334fab4649a3e602924c8b3da1c36bc92d20bdaf7ee219",
+    "after-schema.php": "24e30c3a8f0d09c21c1a43265efa57a6a1d480678478e58ccb0936a3547fb0db",
+    "verified-schema.php": "24e30c3a8f0d09c21c1a43265efa57a6a1d480678478e58ccb0936a3547fb0db"
+  },
+  "public_checks": [
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-37849/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-34995/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-37834/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-تاشو-160-میلیمتر-6-اینچ/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-نخی-2-اینچ-50-میلیمتر/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/نوار-تیپ-20-سانتی-رول-1000-متری/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "3568"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35006/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-37848/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-37841/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-37850/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-37844/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-969/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "3568"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-نخدار-125-میلیمتر/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-نخ-دار-90-میلیمتر/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35006/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-37834/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-نخ-دار-110-میلیمتر/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35012/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-نخ-دار-سایز-160-میلیمتر/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-37845/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-تاشو-90/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-تاشو-125-میلیمتر-5-اینچ/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/لوله-تاشو-2-اینچ-63-میلیمتر/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-37841/",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-37834/?navar_lang=tj",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-37848/?navar_lang=tj",
+      "reported": true,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "reported": false,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "reported": false,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "reported": false,
+      "http": 200,
+      "category": {
+        "@type": "CategoryCode",
+        "inCodeSet": "https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt",
+        "codeValue": "2570"
+      },
+      "graph_identical_except_category": true
+    }
+  ],
+  "local_assertions": 200
+}

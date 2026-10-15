@@ -1,0 +1,35 @@
+--- a/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
++++ b/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
+@@ -103,3 +103,32 @@
+     return $data;
+ }
+ add_filter('rank_math/schema/validated_data', 'navar_rank_math_organization_return_links', PHP_INT_MAX);
++
++/** Verified Google product taxonomy for known hose/tape terms; storefront taxonomy is unchanged. */
++function navar_rank_math_product_google_category( $entity ) {
++    if ( is_admin() || ! is_array($entity) || ! function_exists('is_product') || ! is_product() ) return $entity;
++    $terms = get_the_terms(get_queried_object_id(), 'product_cat');
++    if ( ! is_array($terms) || ! $terms ) return $entity;
++    $hose_slugs = array('لوله-تاشو-بدون-نخ', 'لوله-تاشو-بدون-نخ-و-نخ-دار',
++        'iraq-thread-reinforced-hose', 'iraq-layflat-hose',
++        'ru-thread-reinforced-hose', 'ru-layflat-hose',
++        'tj-thread-reinforced-hose', 'en-thread-reinforced-hose');
++    $tape_slugs = array('نوار-تیپ', 'بغل-دوخت', 'ru-drip-tape', 'ru-side-seam-drip-tape');
++    $codes = array();
++    foreach ( $terms as $term ) {
++        if ( ! is_object($term) || ! isset($term->slug) ) continue;
++        $slug = rawurldecode($term->slug);
++        if ( in_array($slug, $hose_slugs, true) ) $codes['2570'] = true;
++        if ( in_array($slug, $tape_slugs, true) ) $codes['3568'] = true;
++    }
++    // Unknown or conflicting families retain their original category for manual review.
++    if ( count($codes) !== 1 ) return $entity;
++    $ids = array_keys($codes);
++    $entity['category'] = array(
++        '@type'=>'CategoryCode',
++        'inCodeSet'=>'https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt',
++        'codeValue'=>(string)$ids[0],
++    );
++    return $entity;
++}
++add_filter('rank_math/snippet/rich_snippet_product_entity', 'navar_rank_math_product_google_category', 98);

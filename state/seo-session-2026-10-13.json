@@ -508,5 +508,54 @@
       "offer_level_policy_warning_may_remain",
       "variable_product_date_mapping"
     ]
+  },
+  "schema_category_fix": {
+    "status": "deployed_google_live_selected_url_verified",
+    "report": "docs/seo-schema-category-fix.md",
+    "local_assertions": 200,
+    "public_samples": 30,
+    "affected_reported_urls_checked": 27,
+    "all_http200": true,
+    "other_graph_unchanged": true,
+    "gpc_mapping": {
+      "hose": "2570",
+      "drip_tape": "3568"
+    },
+    "unknown_or_conflicting_terms_unchanged": true,
+    "google_live": {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-37849/",
+      "test": "Search Console native URL Inspection LIVE TEST / Merchant listings",
+      "before": {
+        "valid_items": 1,
+        "noncritical_issues": 3,
+        "category_warning": true,
+        "category": "Плоский шланг без армирования",
+        "crawl_display": "Oct 15, 2026, 3:11:30 PM"
+      },
+      "after": {
+        "valid_items": 1,
+        "noncritical_issues": 2,
+        "category_warning": false,
+        "category": {
+          "@type": "CategoryCode",
+          "codeValue": "2570"
+        },
+        "crawl_display": "Oct 15, 2026, 3:18:14 PM"
+      },
+      "remaining": [
+        "Missing field shippingDetails (optional), Offer",
+        "Missing field hasMerchantReturnPolicy (optional), Offer"
+      ],
+      "organization_return_policies_recognized": true,
+      "validate_fix_clicked": false,
+      "request_indexing_clicked": false,
+      "scope": "Google live test is one selected URL, not a claim all27 have been recrawled"
+    },
+    "files": {
+      "before-schema.php": "1f3f84ea4b16e5a47c334fab4649a3e602924c8b3da1c36bc92d20bdaf7ee219",
+      "after-schema.php": "24e30c3a8f0d09c21c1a43265efa57a6a1d480678478e58ccb0936a3547fb0db",
+      "verified-schema.php": "24e30c3a8f0d09c21c1a43265efa57a6a1d480678478e58ccb0936a3547fb0db"
+    },
+    "next": "Review remaining Offer shippingDetails and return-policy warnings using real terms; aggregated category report awaits recrawl"
   }
 }
