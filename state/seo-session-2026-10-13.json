@@ -557,5 +557,19 @@
       "verified-schema.php": "24e30c3a8f0d09c21c1a43265efa57a6a1d480678478e58ccb0936a3547fb0db"
     },
     "next": "Review remaining Offer shippingDetails and return-policy warnings using real terms; aggregated category report awaits recrawl"
+  },
+  "offer_shipping_return_review": {
+    "status": "reviewed_no_truthful_complete_offer_mapping_from_current_terms",
+    "report": "docs/seo-offer-shipping-return-review.md",
+    "live_changes": false,
+    "shipping_blocker": "No grounded numeric shipping rate or maximum; variable buyer-arranged freight and negotiated preparation",
+    "return_blocker": "Exception-dependent defect policy; report/refund/warranty periods are not a general delivery-based return window",
+    "organization_link_policy_preserved": true,
+    "four_export_pages_direct_http200": true,
+    "stale_extractor_not_treated_as_live_regression": true,
+    "new_google_live_test": false,
+    "validate_fix": false,
+    "request_indexing": false,
+    "next": "Freshly inspect other GSC crawl/indexing issues; retain optional Offer warnings rather than fabricate commercial facts"
   }
 }
