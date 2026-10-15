@@ -245,7 +245,7 @@
     "raw_evidence_public": false
   },
   "schema_root_audit": {
-    "status": "read_only_diagnosis_complete_waiting_for_business_policy_confirmation",
+    "status": "export_policy_confirmed_and_published_schema_unchanged_domestic_details_still_separate",
     "report": "docs/seo-schema-root-audit.md",
     "source": "public_policy_and_two_fresh_product_outputs_plus_user_supplied_plugin_archive",
     "installed_source_byte_match": false,
@@ -260,5 +260,64 @@
     "shipping_destinations_confirmed": false,
     "live_changes": false,
     "fabricated_ratings_or_policies": false
+  },
+  "export_policy_update": {
+    "status": "published_and_independently_verified",
+    "report": "docs/seo-export-policy-update.md",
+    "languages": [
+      "ar-IQ",
+      "tg-TJ",
+      "en-US",
+      "ru-RU"
+    ],
+    "updated_page_ids": [
+      501884,
+      501885,
+      518701,
+      518748
+    ],
+    "persian_page_id": 15,
+    "persian_all_captured_fields_unchanged": true,
+    "preserved": [
+      "titles",
+      "slugs",
+      "publication_status",
+      "excerpts",
+      "hreflang_links"
+    ],
+    "policy_source": "explicit_owner_answers_and_clarifications_in_chat",
+    "destinations": [
+      "IQ",
+      "AF",
+      "AM",
+      "GE",
+      "TJ"
+    ],
+    "minimum_order": "one_full_transit_truck_load",
+    "proforma_validity_hours": 24,
+    "visible_issue_notice_hours": 24,
+    "manufacturing_warranty": "one_agricultural_season_from_cultivation_including_defects_discovered_during_use",
+    "refund_max_business_days": 20,
+    "initial_factory_loading": "seller",
+    "confirmed_defect_return_loading": "buyer",
+    "confirmed_defect_other_related_costs": "seller_after_written_expert_confirmation",
+    "named_incoterm_assumed": false,
+    "database_guarded_transaction": true,
+    "four_old_rows_backed_up": true,
+    "independent_exact_hash_verification": true,
+    "public_http200_and_exact_text_all_four": true,
+    "generated_toc_ignored_for_text_comparison": true,
+    "cache_actions": {
+      "four_generated_policy_cache_folders_moved_to_trash": true,
+      "native_rocket_single_url_purge": [
+        "en-us-terms",
+        "ru-ru-terms"
+      ],
+      "global_flush": false,
+      "settings_changes": false
+    },
+    "schema_changed": false,
+    "gsc_validation_started": false,
+    "private_backups_published": false
   }
 }
