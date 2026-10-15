@@ -1,0 +1,182 @@
+{
+  "scope": "read_only",
+  "installed_sources": [
+    {
+      "server_relative_path": "wp-content/plugins/seo-by-rank-math/includes/modules/schema/snippets/class-product-woocommerce.php",
+      "sha256": "ee81580f9aea3c82e99e1dbc5aa3d7cc38487ee32b3394562ce5628786b0deaf",
+      "read_mode": "native_filemanager_view_pre"
+    },
+    {
+      "server_relative_path": "wp-content/plugins/seo-by-rank-math/includes/modules/schema/snippets/class-product.php",
+      "sha256": "3b53a6d1f300a3a9136cd7c470ef4442037e304eeaba34ece064098569617062",
+      "read_mode": "native_filemanager_view_pre"
+    },
+    {
+      "server_relative_path": "wp-content/plugins/seo-by-rank-math-pro/includes/modules/woocommerce/class-woocommerce-pro.php",
+      "sha256": "c95370c9ff72e4cc632f2655d30166eaaab6f16e7b0ec04bccaa67434f0802f8",
+      "read_mode": "native_filemanager_view_pre"
+    },
+    {
+      "server_relative_path": "wp-content/themes/navar-child-zamtar-reader/inc/schema.php",
+      "sha256": "898349f921c84b65db7232d7e971818c86d553e067abc372ecbaa18eee9a157c",
+      "read_mode": "native_filemanager_view_pre"
+    },
+    {
+      "server_relative_path": "wp-content/themes/navar-child-zamtar-reader/inc/woocommerce.php",
+      "sha256": "43ef657218556ae9eb3ef79871133b4d9f27ee652e8a0ec397713453aee1ff42",
+      "read_mode": "native_filemanager_view_pre"
+    },
+    {
+      "server_relative_path": "wp-content/themes/navar-child-zamtar-reader/functions.php",
+      "sha256": "8e00cc7ec9daaa7ec937e7f2c5d5236ca268fa806c67b24ceafb5259744f2774",
+      "read_mode": "native_filemanager_view_pre"
+    }
+  ],
+  "rank_math_brand_setting": "product_type",
+  "sample_sale_date_rows": 0,
+  "public_samples": [
+    {
+      "language": "fa-IR",
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "simple"
+      },
+      "category": "لوله نخ دار",
+      "offer_fields": {
+        "validFrom": null,
+        "priceValidUntil": "2027-12-31",
+        "shippingDetails": null,
+        "hasMerchantReturnPolicy": null
+      }
+    },
+    {
+      "language": "ru-RU",
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "simple"
+      },
+      "category": "Армированный плоский шланг",
+      "offer_fields": {
+        "validFrom": null,
+        "priceValidUntil": "2027-12-31",
+        "shippingDetails": null,
+        "hasMerchantReturnPolicy": null
+      }
+    },
+    {
+      "language": "en-US",
+      "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "simple"
+      },
+      "category": "Thread-Reinforced Layflat Hose",
+      "offer_fields": {
+        "validFrom": null,
+        "priceValidUntil": "2027-12-31",
+        "shippingDetails": null,
+        "hasMerchantReturnPolicy": null
+      }
+    },
+    {
+      "language": "ar-IQ",
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "simple"
+      },
+      "category": "خرطوم مسطح مقوّى بالخيوط",
+      "offer_fields": {
+        "validFrom": null,
+        "priceValidUntil": "2027-12-31",
+        "shippingDetails": null,
+        "hasMerchantReturnPolicy": null
+      }
+    },
+    {
+      "language": "tg-TJ",
+      "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "simple"
+      },
+      "category": "Қубури қатшавандаи риштадор",
+      "offer_fields": {
+        "validFrom": null,
+        "priceValidUntil": "2027-12-31",
+        "shippingDetails": null,
+        "hasMerchantReturnPolicy": null
+      }
+    }
+  ],
+  "legacy_policy_links": [
+    {
+      "url": "https://navar-abyari.ir/iraq-rules/?navar_lang=iraq",
+      "http": 200,
+      "final": "https://navar-abyari.ir/iraq-rules/",
+      "redirects": [
+        301
+      ],
+      "export_marker": false
+    },
+    {
+      "url": "https://navar-abyari.ir/tj-rules/?navar_lang=tj",
+      "http": 200,
+      "final": "https://navar-abyari.ir/tj-rules/",
+      "redirects": [
+        301
+      ],
+      "export_marker": false
+    },
+    {
+      "url": "https://navar-abyari.ir/en-rules/?navar_lang=en",
+      "http": 200,
+      "final": "https://navar-abyari.ir/en-rules/",
+      "redirects": [
+        301
+      ],
+      "export_marker": false
+    },
+    {
+      "url": "https://navar-abyari.ir/ru-rules/?navar_lang=ru",
+      "http": 200,
+      "final": "https://navar-abyari.ir/ru-rules/",
+      "redirects": [
+        301
+      ],
+      "export_marker": false
+    }
+  ],
+  "gsc_category_selected_example": {
+    "url": "https://navar-abyari.ir/product/ru-ru-product-37849/",
+    "category": "Плоский шланг без армирования",
+    "brand": {
+      "@type": "Brand",
+      "name": "simple"
+    },
+    "source": "GSC category issue selected example crawled HTML"
+  },
+  "gsc_snapshot": {
+    "displayed_last_update": "10/13/26",
+    "valid": 40,
+    "invalid": 0,
+    "category_warning_items": 27,
+    "return_policy_warning_items": 40,
+    "shipping_warning_items": 40,
+    "valid_from_warning_items": 40,
+    "overlap_not_summed": true
+  },
+  "category_cause_confirmed": false
+}
