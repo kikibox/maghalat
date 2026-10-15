@@ -390,5 +390,42 @@
       "foreign_ItemPage_language",
       "shippingDetails_and_return_policy_schema"
     ]
+  },
+  "bale_support": {
+    "status": "deployed_verified",
+    "url": "https://ble.ir/afpcompany",
+    "report": "docs/bale-support-footer-mobile.md",
+    "modified_file": "wp-content/themes/navar-child-zamtar-reader/footer.php",
+    "footer_languages": [
+      "fa",
+      "iraq",
+      "tj",
+      "en",
+      "ru"
+    ],
+    "floating_languages": [
+      "fa"
+    ],
+    "mobile_max_width_px": 900,
+    "vertical_gap_px": 12,
+    "phone_unchanged": true,
+    "logo_source": "owner_attachment",
+    "optimized_logo_bytes": 3990,
+    "logo_delivery": "embedded_static_png_data_uri",
+    "standalone_upload_success": false,
+    "native_wp_rocket_cache_clear": true,
+    "wp_rocket_settings_changed": false,
+    "php_lint": true,
+    "local_assertions": 35,
+    "public_sample_count": 6,
+    "public_checks_passed": true,
+    "browser_widths_checked": [
+      320,
+      375,
+      390,
+      768,
+      1280
+    ],
+    "foreign_floating_html_omitted": true
   }
 }

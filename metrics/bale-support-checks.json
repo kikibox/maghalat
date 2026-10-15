@@ -1,0 +1,155 @@
+{
+  "public": [
+    {
+      "language": "fa-home",
+      "url": "https://navar-abyari.ir/",
+      "http": 200,
+      "footer_links": 1,
+      "floating_bale_links": 1,
+      "phone_links": 1,
+      "footer_label": "پشتیبانی در بله",
+      "pass": true
+    },
+    {
+      "language": "fa-IR",
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "http": 200,
+      "footer_links": 1,
+      "floating_bale_links": 1,
+      "phone_links": 1,
+      "footer_label": "پشتیبانی در بله",
+      "pass": true
+    },
+    {
+      "language": "ru-RU",
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "http": 200,
+      "footer_links": 1,
+      "floating_bale_links": 0,
+      "phone_links": 1,
+      "footer_label": "Поддержка в Bale",
+      "pass": true
+    },
+    {
+      "language": "en-US",
+      "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "http": 200,
+      "footer_links": 1,
+      "floating_bale_links": 0,
+      "phone_links": 1,
+      "footer_label": "Support on Bale",
+      "pass": true
+    },
+    {
+      "language": "ar-IQ",
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "http": 200,
+      "footer_links": 1,
+      "floating_bale_links": 0,
+      "phone_links": 1,
+      "footer_label": "الدعم عبر بله",
+      "pass": true
+    },
+    {
+      "language": "tg-TJ",
+      "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "http": 200,
+      "footer_links": 1,
+      "floating_bale_links": 0,
+      "phone_links": 1,
+      "footer_label": "Дастгирӣ дар Bale",
+      "pass": true
+    }
+  ],
+  "browser": [
+    {
+      "balePresent": true,
+      "baleDisplay": "grid",
+      "baleVisibility": "visible",
+      "phoneDisplay": "grid",
+      "gap": 12,
+      "aligned": true,
+      "width": 54,
+      "horizontalOverflow": false,
+      "logoLoaded": true,
+      "viewport": 320
+    },
+    {
+      "balePresent": true,
+      "baleDisplay": "grid",
+      "baleVisibility": "visible",
+      "phoneDisplay": "grid",
+      "gap": 12,
+      "aligned": true,
+      "width": 54,
+      "horizontalOverflow": false,
+      "logoLoaded": true,
+      "viewport": 375
+    },
+    {
+      "balePresent": true,
+      "baleDisplay": "grid",
+      "baleVisibility": "visible",
+      "phoneDisplay": "grid",
+      "gap": 12,
+      "aligned": true,
+      "width": 56,
+      "horizontalOverflow": false,
+      "logoLoaded": true,
+      "viewport": 390
+    },
+    {
+      "balePresent": true,
+      "baleDisplay": "grid",
+      "baleVisibility": "visible",
+      "phoneDisplay": "grid",
+      "gap": 12,
+      "aligned": true,
+      "width": 56,
+      "horizontalOverflow": false,
+      "logoLoaded": true,
+      "viewport": 768
+    },
+    {
+      "balePresent": true,
+      "baleDisplay": "none",
+      "baleVisibility": "visible",
+      "phoneDisplay": "none",
+      "gap": 0,
+      "aligned": true,
+      "width": 0,
+      "horizontalOverflow": false,
+      "logoLoaded": true,
+      "viewport": 1280
+    },
+    {
+      "menu_open_hides_bale": true
+    },
+    {
+      "english_product_mobile": {
+        "balePresent": false,
+        "baleDisplay": null,
+        "baleVisibility": null,
+        "phoneDisplay": "grid",
+        "gap": null,
+        "aligned": null,
+        "horizontalOverflow": false,
+        "logoLoaded": false
+      }
+    }
+  ],
+  "files": {
+    "before-footer.php": {
+      "bytes": 4531,
+      "sha256": "c25cbc366956901fc02ef3663f54523e22f5ce8777d4e87f348a50aa0310ac68"
+    },
+    "after-footer.php": {
+      "bytes": 12221,
+      "sha256": "6d54353bfbf5e1067b662582f9b981252b256a45544f48e399fa412f04fb3d5e"
+    },
+    "bale-support.png": {
+      "bytes": 3990,
+      "sha256": "86e9d8ed395d69baf4fec511fbf6caa6bb1a1e7bbfec3a879d7bbeceb879557b"
+    }
+  }
+}

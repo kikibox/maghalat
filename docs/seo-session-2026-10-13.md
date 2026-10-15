@@ -141,3 +141,7 @@ Authenticated browser session available. Pages still shows Oct8 aggregate data; 
 
 ## اصلاح زنده مرحله اول اسکیما و لینک قوانین
 برند Rank Math از product_type به custom/AFP تغییر کرد. دو فایل ماژول قالب به‌صورت محدود اصلاح و پس از ذخیره مستقل بازخوانی شدند: اتصال enrichment به Product خود Rank Math و هدف مستقیم قوانین هر زبان. آزمون مهمان شش محصول/پنج زبان، یک Product، AFP، لینک قوانین درست و امتیاز فقط از نظر واقعی را تأیید کرد؛ ۲۵ assertion و syntax check موفق بودند. تنها شش کش URL پاک شد. قیمت/دسته/تاریخ در پنج baseline ثابت‌اند. گزارش `docs/seo-schema-root-fix-stage1.md`؛ رفع تمام هشدارهای GSC ادعا نشده و Validate fix اجرا نشد.
+
+
+## افزودن پشتیبانی بله پیش از ادامه سئو
+لینک مالک ble.ir/afpcompany با لوگوی ارسالی به فوتر اضافه شد؛ آیکون شناور موبایل فقط درصفحات فارسی بالای دکمه تماس و بافاصله12px است. تماس حفظ شد.35assertion، کنترل مهمان شش صفحه/پنج زبان و اندازه‌های320تا1280 موفق بود. فقطfooter.php تغییر و کش بومیWP Rocket برای فوتر سراسری تازه شد. گزارش `docs/bale-support-footer-mobile.md`. ادامه اصلاحات اسکیما در این مرحله انجام نشد.
