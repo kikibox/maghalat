@@ -461,5 +461,52 @@
       "missing_validFrom_without_real_price_start",
       "variable_product_date_mapping"
     ]
+  },
+  "schema_root_fix_stage3": {
+    "status": "deployed_public_verified_google_test_unavailable",
+    "report": "docs/seo-schema-root-fix-stage3.md",
+    "modified_file": "inc/schema.php",
+    "organization_policy_method": "Google Organization OptionB merchantReturnLink",
+    "organization_id": "https://navar-abyari.ir/#organization",
+    "domestic_country": [
+      "IR"
+    ],
+    "export_countries": [
+      "IQ",
+      "AF",
+      "AM",
+      "GE",
+      "TJ"
+    ],
+    "policies_per_organization": 2,
+    "export_link_follows_page_language": true,
+    "persian_export_reference_language": "en-US",
+    "published_pages_only": true,
+    "existing_policy_preserved": true,
+    "new_organization_or_product": false,
+    "offer_policy_added": false,
+    "invented_return_days_fees_shipping": false,
+    "local_assertions": 145,
+    "php_lint": true,
+    "independent_readback_match": true,
+    "public_samples": 10,
+    "other_graph_exact_match": true,
+    "five_policy_texts_unchanged": true,
+    "bale_and_phone_preserved": true,
+    "native_wp_rocket_page_cache_purges": 1,
+    "rich_results_test_attempted": true,
+    "rich_results_test_result": "no_result_google_internal_error_try_again_in_a_few_hours",
+    "category_modified": false,
+    "category_cause_confirmed": false,
+    "gsc_recheck": false,
+    "validate_fix": false,
+    "request_indexing": false,
+    "remaining": [
+      "retry_official_google_category_sample_after_tool_recovers",
+      "shippingDetails_without_fabricated_rates",
+      "missing_validFrom_without_actual_price_start",
+      "offer_level_policy_warning_may_remain",
+      "variable_product_date_mapping"
+    ]
   }
 }

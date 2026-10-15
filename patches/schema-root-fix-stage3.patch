@@ -1,0 +1,44 @@
+--- a/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
++++ b/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
+@@ -65,3 +65,41 @@
+     return $entity;
+ }
+ add_filter('rank_math/snippet/rich_snippet_product_entity', 'navar_rank_math_product_price_dates', 95);
++
++/** Link-only Organization policy: do not invent a return window or return/shipping fee. */
++function navar_schema_return_policy_link( $slug, $countries ) {
++    $page = get_page_by_path($slug);
++    if ( ! $page || 'publish' !== get_post_status($page) ) return array();
++    $url = get_permalink($page);
++    if ( ! $url ) return array();
++    return array(
++        '@type'=>'MerchantReturnPolicy',
++        '@id'=>$url . '#merchant-return-policy',
++        'merchantReturnLink'=>$url,
++        'applicableCountry'=>$countries,
++    );
++}
++function navar_rank_math_organization_return_links( $data ) {
++    if ( is_admin() || ! is_array($data) || ! function_exists('navar_lang') ) return $data;
++    $export_slugs = array('fa'=>'en-us-terms','iraq'=>'ar-iq-qawanin','tj'=>'tg-tj-qoidaho','en'=>'en-us-terms','ru'=>'ru-ru-terms');
++    $lang = navar_lang();
++    if ( ! isset($export_slugs[$lang]) ) return $data;
++    // Destination is explicit: English/Russian UI must not imply sales to US/RU.
++    $domestic = navar_schema_return_policy_link('قوانین', array('IR'));
++    $export = navar_schema_return_policy_link($export_slugs[$lang], array('IQ','AF','AM','GE','TJ'));
++    $policies = array_values(array_filter(array($domestic, $export)));
++    if ( ! $policies ) return $data;
++    $wrapped = isset($data['@graph']) && is_array($data['@graph']);
++    $nodes = $wrapped ? $data['@graph'] : $data;
++    foreach ( $nodes as &$entity ) {
++        if ( ! is_array($entity) || empty($entity['@type']) || empty($entity['@id'])
++            || home_url('/#organization') !== $entity['@id']
++            || ! array_intersect((array)$entity['@type'], array('Organization','LocalBusiness','OnlineStore'))
++            || ! empty($entity['hasMerchantReturnPolicy']) ) continue;
++        $entity['hasMerchantReturnPolicy'] = $policies;
++    }
++    unset($entity);
++    if ( $wrapped ) $data['@graph'] = $nodes; else $data = $nodes;
++    return $data;
++}
++add_filter('rank_math/schema/validated_data', 'navar_rank_math_organization_return_links', PHP_INT_MAX);

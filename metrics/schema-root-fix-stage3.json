@@ -1,0 +1,383 @@
+{
+  "public_checks": [
+    {
+      "language": "fa-IR",
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/en-us-terms/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/en-us-terms/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": null,
+      "product_count": 1,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 1,
+      "pass": true
+    },
+    {
+      "language": "ru-RU",
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/ru-ru-terms/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/ru-ru-terms/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": null,
+      "product_count": 1,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    },
+    {
+      "language": "en-US",
+      "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/en-us-terms/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/en-us-terms/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": null,
+      "product_count": 1,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    },
+    {
+      "language": "ar-IQ",
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/ar-iq-qawanin/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/ar-iq-qawanin/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": null,
+      "product_count": 1,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    },
+    {
+      "language": "tg-TJ",
+      "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/tg-tj-qoidaho/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/tg-tj-qoidaho/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": null,
+      "product_count": 1,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    },
+    {
+      "language": "en-policy",
+      "url": "https://navar-abyari.ir/en-us-terms/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/en-us-terms/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/en-us-terms/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": true,
+      "product_count": 0,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    },
+    {
+      "language": "fa-policy",
+      "url": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/en-us-terms/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/en-us-terms/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": true,
+      "product_count": 0,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 1,
+      "pass": true
+    },
+    {
+      "language": "ar-policy",
+      "url": "https://navar-abyari.ir/ar-iq-qawanin/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/ar-iq-qawanin/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/ar-iq-qawanin/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": true,
+      "product_count": 0,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    },
+    {
+      "language": "tg-policy",
+      "url": "https://navar-abyari.ir/tg-tj-qoidaho/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/tg-tj-qoidaho/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/tg-tj-qoidaho/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": true,
+      "product_count": 0,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    },
+    {
+      "language": "ru-policy",
+      "url": "https://navar-abyari.ir/ru-ru-terms/",
+      "http": 200,
+      "organization_count": 1,
+      "return_policies": [
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+          "applicableCountry": [
+            "IR"
+          ]
+        },
+        {
+          "@type": "MerchantReturnPolicy",
+          "@id": "https://navar-abyari.ir/ru-ru-terms/#merchant-return-policy",
+          "merchantReturnLink": "https://navar-abyari.ir/ru-ru-terms/",
+          "applicableCountry": [
+            "IQ",
+            "AF",
+            "AM",
+            "GE",
+            "TJ"
+          ]
+        }
+      ],
+      "other_graph_exact_match": true,
+      "policy_visible_text_unchanged": true,
+      "product_count": 0,
+      "offer_return_policy_present": false,
+      "footer_bale": 1,
+      "floating_bale": 0,
+      "pass": true
+    }
+  ],
+  "files": {
+    "before-schema.php": "aaedb3e31e1385ccd922e56297a2b88eb519072cb20c1a74dc4f53c0b707d2f0",
+    "after-schema.php": "1f3f84ea4b16e5a47c334fab4649a3e602924c8b3da1c36bc92d20bdaf7ee219",
+    "verified-schema.php": "1f3f84ea4b16e5a47c334fab4649a3e602924c8b3da1c36bc92d20bdaf7ee219"
+  },
+  "local_policy_assertions": 84,
+  "previous_stage_regression_assertions": 61,
+  "google_rich_results_attempt": {
+    "tested_url": "https://navar-abyari.ir/product/ru-ru-product-37849/",
+    "method": "Google Rich Results Test URL mode smartphone",
+    "result": "no_result",
+    "error": "Something went wrong. If the issue persists, try again in a few hours.",
+    "retried": false,
+    "google_validation_success": false,
+    "search_console_validate_fix": false,
+    "category_modified": false
+  },
+  "selected_category_sample": {
+    "url": "https://navar-abyari.ir/product/ru-ru-product-37849/",
+    "http": 200,
+    "product_count": 1,
+    "category": "Плоский шланг без армирования",
+    "category_json_type": "str",
+    "organization_policy_count": 2,
+    "offer_has_return_policy": false,
+    "live_google_test": "attempted_no_result_internal_google_error",
+    "category_cause_confirmed": false
+  },
+  "google_validation_success": false
+}
