@@ -1,0 +1,412 @@
+{
+  "at_utc": "2026-10-15T21:52:28.469051+00:00",
+  "total_public_content": 6889,
+  "normal_posts": 5602,
+  "regional_posts": 1087,
+  "faq": 57,
+  "pages": 68,
+  "products": 75,
+  "hash_verified_content_sources": {
+    "backup_hash_matched": 5859,
+    "fresh_db": 14,
+    "prior_patch_hash_matched": 1016
+  },
+  "stored_internal_anchors": 31591,
+  "contextual_internal_anchors_excluding_language_controls": 31591,
+  "language_control_anchors": 0,
+  "mapped_context_edges": 30232,
+  "distinct_mapped_source_target_pairs": 29070,
+  "normal_posts_without_mapped_body_inlinks": 5096,
+  "normal_posts_without_same_language_body_inlinks": 5097,
+  "normal_posts_without_same_language_outlinks": 2790,
+  "normal_posts_median_unique_internal_urls": 4.0,
+  "unresolved_unique_content_targets_pending_http": 258,
+  "unresolved_placements_pending_http": 640,
+  "generic_anchor_candidates": 4,
+  "foreign_article_to_fa_placements": 9281,
+  "foreign_articles_with_fa_target": 3928,
+  "per_language": [
+    {
+      "language": "fa-IR",
+      "articles": 1188,
+      "without_mapped_body_inlinks": 1016,
+      "without_same_language_body_inlinks": 1016,
+      "without_same_language_outlinks": 109,
+      "median_internal_urls": 4.0,
+      "median_same_language_inlinks": 0.0
+    },
+    {
+      "language": "ar-IQ",
+      "articles": 1198,
+      "without_mapped_body_inlinks": 1027,
+      "without_same_language_body_inlinks": 1028,
+      "without_same_language_outlinks": 304,
+      "median_internal_urls": 4.0,
+      "median_same_language_inlinks": 0.0
+    },
+    {
+      "language": "tg-TJ",
+      "articles": 1185,
+      "without_mapped_body_inlinks": 1027,
+      "without_same_language_body_inlinks": 1027,
+      "without_same_language_outlinks": 346,
+      "median_internal_urls": 4.0,
+      "median_same_language_inlinks": 0.0
+    },
+    {
+      "language": "en-US",
+      "articles": 1015,
+      "without_mapped_body_inlinks": 1010,
+      "without_same_language_body_inlinks": 1010,
+      "without_same_language_outlinks": 1015,
+      "median_internal_urls": 4.0,
+      "median_same_language_inlinks": 0.0
+    },
+    {
+      "language": "ru-RU",
+      "articles": 1016,
+      "without_mapped_body_inlinks": 1016,
+      "without_same_language_body_inlinks": 1016,
+      "without_same_language_outlinks": 1016,
+      "median_internal_urls": 4.0,
+      "median_same_language_inlinks": 0.0
+    }
+  ],
+  "skipped": {
+    "fragment_or_nonweb": 1249,
+    "asset_or_system": 35,
+    "external": 2414
+  },
+  "caveats": [
+    "Stored body graph only; menus, archive listings, related-post widgets and runtime URL rewrites not included. No-inlink here is not globally orphaned.",
+    "Path/slug matching is candidate identity, not HTTP/indexability verification. Only selected targets will be HTTP-checked.",
+    "Cross-language is a candidate relevance issue, not automatically wrong; inspect translation availability and rendered DOM.",
+    "Language metadata is fresh for standard posts/pages/products; original regional content defaults to Persian and is sampled separately.",
+    "No traffic/rank benefit can be promised; current report has no fresh GSC query-performance ranking."
+  ],
+  "comparison_plan": [
+    {
+      "question": "Which language has the largest same-language contextual linking gap?",
+      "grain": "ordinary published article",
+      "population": "all5602 ordinary posts",
+      "unit": "article count and rate",
+      "finding": "English and Russian same-language body-inlink gaps exceed99%, while other languages are85–87%; not a global orphan diagnosis.",
+      "disposition": "chart",
+      "reason": "Five languages need both denominator and gap context; do not label true orphaned.",
+      "numerators": [
+        1016,
+        1028,
+        1027,
+        1010,
+        1016
+      ],
+      "denominators": [
+        1188,
+        1198,
+        1185,
+        1015,
+        1016
+      ]
+    },
+    {
+      "question": "What should be repaired first?",
+      "grain": "link source and URL",
+      "population": "selected unresolved and frequent targets",
+      "unit": "HTTP status and unique sources",
+      "disposition": "table",
+      "reason": "Exact actionable URL examples matter more than an additional volume chart."
+    }
+  ],
+  "live_checks": {
+    "primary_targets_tested": 83,
+    "primary_targets_404": 57,
+    "primary_targets_200": 26,
+    "stored_placements_to_tested_404": 305,
+    "distinct_sources_to_tested_404": 213,
+    "source_html_samples": 9,
+    "extra_language_target_checks": 8,
+    "extra_broken_source_checks": 3,
+    "extra_system_target_proof": [
+      {
+        "source_id": 506339,
+        "source_url": "https://navar-abyari.ir/kurdistan/%d9%87%d8%b2%d8%a7%d8%b1%da%a9%d8%a7%d9%86%db%8c%d8%a7%d9%86-%da%a9%d8%b1%d8%af%d8%b3%d8%aa%d8%a7%d9%86-navar-tip-20cm/",
+        "source_http": 200,
+        "anchor": "k3",
+        "target_url": "https://navar-abyari.ir/acf-field/field_62559b17687d2/",
+        "target_http": 404,
+        "href_present_in_public_html": true
+      },
+      {
+        "source_id": 516406,
+        "source_url": "https://navar-abyari.ir/kermanshah/%d8%a8%d8%a7%d9%86%d9%88%d8%b1%d9%87-%da%a9%d8%b1%d9%85%d8%a7%d9%86%d8%b4%d8%a7%d9%87-looleh-nakhi-tashoo/",
+        "source_http": 200,
+        "anchor": "",
+        "target_url": "https://navar-abyari.ir/rank_math_schema/article-3/",
+        "target_http": 404,
+        "href_present_in_public_html": true
+      }
+    ],
+    "live_scope": "Priority sample, not a full HTTP crawl of every link; 57 is a lower-bound observed count, not an estimated site total."
+  },
+  "translation_opportunities": {
+    "cross_language_post_placements": 19547,
+    "articles_with_cross_language_target": 5286,
+    "existing_stored_same_language_equivalent_placements": 9779,
+    "articles_with_existing_equivalent_candidate": 3190,
+    "missing_by_language": [
+      {
+        "language": "ar-IQ",
+        "state": "existing_equivalent",
+        "placements": 3740
+      },
+      {
+        "language": "ar-IQ",
+        "state": "no_stored_equivalent",
+        "placements": 210
+      },
+      {
+        "language": "en-US",
+        "state": "no_stored_equivalent",
+        "placements": 4598
+      },
+      {
+        "language": "fa-IR",
+        "state": "existing_equivalent",
+        "placements": 2469
+      },
+      {
+        "language": "fa-IR",
+        "state": "no_stored_equivalent",
+        "placements": 113
+      },
+      {
+        "language": "ru-RU",
+        "state": "no_stored_equivalent",
+        "placements": 4572
+      },
+      {
+        "language": "tg-TJ",
+        "state": "existing_equivalent",
+        "placements": 3570
+      },
+      {
+        "language": "tg-TJ",
+        "state": "no_stored_equivalent",
+        "placements": 275
+      }
+    ],
+    "degraded_anchor_placements": 1616,
+    "articles_with_degraded_anchors": 1286,
+    "review_examples": [
+      {
+        "source_id": 37871,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط في أربيل: الدليل الشامل للزراعة الحديثة",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-في-اربيل/",
+        "old_url": "https://navar-abyari.ir/فاصله-نوار-تیپ-در-چغندر-قند-بهترین/",
+        "old_target_id": 36180,
+        "old_target_language": "fa-IR",
+        "anchor": "أهمية الري بالتنقيط في الزراعة الحديثة",
+        "candidate_same_language_id": 502079,
+        "candidate_same_language_url": "https://navar-abyari.ir/sugar-beet-row-spacing-standards/",
+        "candidate_title": "المسافات بين الصفوف في زراعة بنجر السكر وفق المعايير الموصى بها",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37871,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط في أربيل: الدليل الشامل للزراعة الحديثة",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-في-اربيل/",
+        "old_url": "https://navar-abyari.ir/تفاوت-نوار-تیپ-بغل-دوخت-و-پلاکدار/",
+        "old_target_id": 35894,
+        "old_target_language": "fa-IR",
+        "anchor": "فروقات نوار تیپ بغل دوخت و پلاکدار",
+        "candidate_same_language_id": 502055,
+        "candidate_same_language_url": "https://navar-abyari.ir/farq-nawwar-tip-bolal-dowkh-w-plaked/",
+        "candidate_title": "الفرق بين شريطטיפ الجانبي الخياطي وشريطטיפ ذو القطرات الملحقة",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37871,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط في أربيل: الدليل الشامل للزراعة الحديثة",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-في-اربيل/",
+        "old_url": "https://navar-abyari.ir/product/نوار-تیپ-20-سانتی-رول-1000-متری/",
+        "old_target_id": 969,
+        "old_target_language": "fa-IR",
+        "anchor": "نوار تیپ 20 سانتی رول 1000 متری",
+        "candidate_same_language_id": 501913,
+        "candidate_same_language_url": "https://navar-abyari.ir/product/ar-iq-product-969/",
+        "candidate_title": "شريط الري بالتنقيط 20 سم، لفة 1000 متر",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37871,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط في أربيل: الدليل الشامل للزراعة الحديثة",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-في-اربيل/",
+        "old_url": "https://navar-abyari.ir/انتخاب-نوار-تیپ-کشاورزی/",
+        "old_target_id": 35899,
+        "old_target_language": "fa-IR",
+        "anchor": "اختيار نوار تیپ کشاورزی",
+        "candidate_same_language_id": 502059,
+        "candidate_same_language_url": "https://navar-abyari.ir/iq-selecting-agricultural-drip-tape/",
+        "candidate_title": "اختيار شريط التنقيط الزراعي",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/فاصله-نوار-تیپ-در-لوبیا/",
+        "old_target_id": 36139,
+        "old_target_language": "fa-IR",
+        "anchor": "أنظمة الري بالتنقيط",
+        "candidate_same_language_id": 502075,
+        "candidate_same_language_url": "https://navar-abyari.ir/bean-strip-spacing-optimal-cultivation-standard/",
+        "candidate_title": "المسافة بين الأشرطة في زراعة الفاصوليا - المعيار الزراعي الأمثل",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/نحوه-انتخاب-نوار-آبیاری-قطره-ای-مناسب/",
+        "old_target_id": 1013,
+        "old_target_language": "fa-IR",
+        "anchor": "دليل اختيار \"شريط الري\" المناسب",
+        "candidate_same_language_id": 502023,
+        "candidate_same_language_url": "https://navar-abyari.ir/how-to-choose-suitable-drip-irrigation-tape/",
+        "candidate_title": "كيفية اختيار شريط الري بالتنقيط المناسب",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/انواع-نوار-آبیاری-و-عملکرد-هرکدام/",
+        "old_target_id": 35857,
+        "old_target_language": "fa-IR",
+        "anchor": "أنواع \"أشرطة الري\"",
+        "candidate_same_language_id": 502039,
+        "candidate_same_language_url": "https://navar-abyari.ir/types-irrigation-tapes-performance/",
+        "candidate_title": "أنواع شرائط الري وأداء كل نوع",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/product/لوله-نخ-دار-63-میلیمتر/",
+        "old_target_id": 34995,
+        "old_target_language": "fa-IR",
+        "anchor": "\"لوله نخدار\" 63 مم",
+        "candidate_same_language_id": 501915,
+        "candidate_same_language_url": "https://navar-abyari.ir/product/ar-iq-product-34995/",
+        "candidate_title": "خرطوم قماشي مقوى بالخيوط 2½ بوصة، 63 ملم",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/product/لوله-نخ-دار-سایز-160-میلیمتر/",
+        "old_target_id": 35012,
+        "old_target_language": "fa-IR",
+        "anchor": "\"لوله نخدار\" 160 مم",
+        "candidate_same_language_id": 501925,
+        "candidate_same_language_url": "https://navar-abyari.ir/product/ar-iq-product-35012/",
+        "candidate_title": "خرطوم قماشي مقوى بالخيوط 6 بوصة، 160 ملم",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/product/لوله-نخ-دار-110-میلیمتر/",
+        "old_target_id": 35010,
+        "old_target_language": "fa-IR",
+        "anchor": "\"لوله نخدار\" 110 مم",
+        "candidate_same_language_id": 501921,
+        "candidate_same_language_url": "https://navar-abyari.ir/product/ar-iq-product-35010/",
+        "candidate_title": "خرطوم قماشي مقوى بالخيوط 4 بوصة، 110 ملم",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/product/لوله-نخ-دار-90-میلیمتر/",
+        "old_target_id": 35006,
+        "old_target_language": "fa-IR",
+        "anchor": "\"لوله نخ دار\" 90 مم",
+        "candidate_same_language_id": 501919,
+        "candidate_same_language_url": "https://navar-abyari.ir/product/ar-iq-product-35006/",
+        "candidate_title": "خرطوم قماشي مقوى بالخيوط 3½ بوصة، 90 ملم",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      },
+      {
+        "source_id": 37875,
+        "source_language": "ar-IQ",
+        "source_title": "شريط الري بالتنقيط: دليلك الشامل لزيادة إنتاجية المحاصيل",
+        "source_url": "https://navar-abyari.ir/شريط-الري-بالتنقيط-سلیمانیه/",
+        "old_url": "https://navar-abyari.ir/product/لوله-نخ-دار-75-میلیمتر/",
+        "old_target_id": 35005,
+        "old_target_language": "fa-IR",
+        "anchor": "\"لوله نخ دار\" 75 مم",
+        "candidate_same_language_id": 501917,
+        "candidate_same_language_url": "https://navar-abyari.ir/product/ar-iq-product-35005/",
+        "candidate_title": "خرطوم قماشي مقوى بالخيوط 2¾ بوصة، 75 ملم",
+        "requires": "Verify target HTTP/canonical, topical relevance and placement; do not bulk apply"
+      }
+    ],
+    "equivalent_limit": "Stored source-ID relationships only; no guessed translation alignment; absence means no stored equivalent in this audited set, not proof none exists."
+  },
+  "system_target_candidates": {
+    "urls": 60,
+    "placements": 110,
+    "source_pages": 104,
+    "confirmed_public_examples": [
+      {
+        "source_id": 506339,
+        "source_url": "https://navar-abyari.ir/kurdistan/%d9%87%d8%b2%d8%a7%d8%b1%da%a9%d8%a7%d9%86%db%8c%d8%a7%d9%86-%da%a9%d8%b1%d8%af%d8%b3%d8%aa%d8%a7%d9%86-navar-tip-20cm/",
+        "source_http": 200,
+        "anchor": "k3",
+        "target_url": "https://navar-abyari.ir/acf-field/field_62559b17687d2/",
+        "target_http": 404,
+        "href_present_in_public_html": true
+      },
+      {
+        "source_id": 516406,
+        "source_url": "https://navar-abyari.ir/kermanshah/%d8%a8%d8%a7%d9%86%d9%88%d8%b1%d9%87-%da%a9%d8%b1%d9%85%d8%a7%d9%86%d8%b4%d8%a7%d9%87-looleh-nakhi-tashoo/",
+        "source_http": 200,
+        "anchor": "",
+        "target_url": "https://navar-abyari.ir/rank_math_schema/article-3/",
+        "target_http": 404,
+        "href_present_in_public_html": true
+      }
+    ]
+  },
+  "privacy": {
+    "password_protected_published_content": 0,
+    "no_authentication_data_or_full_db_export_in_package": true
+  },
+  "site_writes_during_this_audit": false,
+  "github_sync": "explicitly_authorized_by_owner; sync_requested_this_step",
+  "raw_source_quality": {
+    "unique_content_ids": 6889,
+    "duplicate_source_rows": 0,
+    "slug_types": "kept as strings, including numeric slugs; no identifier coercion",
+    "guid": "not used; many blank GUIDs",
+    "repeated_body_hashes": "retained as separate page identities, not deduplicated",
+    "json_text_rendering_mismatch": "6 freshly read bodies changed by display extraction; rejected and replaced by HEX byte read, all14 fresh bodies hash verified",
+    "language_metadata": "Fresh read for all included types; missing translation tags interpreted with current categories/default original Persian; no ID-parity guess."
+  }
+}

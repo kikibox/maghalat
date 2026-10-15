@@ -1,0 +1,6 @@
+--- a/public_html/.htaccess
++++ b/public_html/.htaccess
+@@ -174,0 +175,3 @@
++# Exact legacy 75mm hose alias; canonical product35005 remains unchanged.
++RewriteCond %{HTTP_HOST} ^navar-abyari\.ir(?::[0-9]+)?$ [NC]
++RewriteRule ^product/\xD9\x84\xD9\x88\xD9\x84\xD9\x87-\xD9\x86\xD8\xAE-\xD8\xAF\xD8\xA7\xD8\xB1-75-\xD9\x85\xDB\x8C\xD9\x84\xD9\x85\xD8\xAA\xD8\xB1/$ https://navar-abyari.ir/product/لوله-نخ-دار-75-میلیمتر/ [R=301,L]

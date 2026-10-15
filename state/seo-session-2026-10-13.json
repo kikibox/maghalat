@@ -598,6 +598,38 @@
     "new_site_changes": false,
     "request_indexing": false,
     "validate_fix": false,
-    "next": "DB/content reference search for legacy75 alias, repair existing references, then exact301 to verified product35005; preserve canonical product URL and system endpoint security"
+    "next": "DB/content reference search for legacy75 alias, repair existing references, then exact301 to verified product35005; preserve canonical product URL and system endpoint security",
+    "followup_report": "docs/seo-legacy75-root-repair.md"
+  },
+  "legacy75_root_repair": {
+    "status": "deployed_and_independently_verified",
+    "checked_at_utc": "2026-10-15T21:41:46.204373+00:00",
+    "report": "docs/seo-legacy75-root-repair.md",
+    "metrics": "metrics/seo-legacy75-root-repair.json",
+    "post_id": 37889,
+    "product_id": 35005,
+    "changed_internal_hrefs": 1,
+    "exact_301": true,
+    "temporary_metadata_removed": true,
+    "existing_alias_regressions_passed": 8,
+    "product_schema_unchanged": true,
+    "remaining_matching_searched_references": 0,
+    "request_indexing": false,
+    "validate_fix": false,
+    "next": "Monitor Google recrawl; investigate other confirmed source links with equivalent product targets; no blanket redirects."
+  },
+  "internal_link_audit": {
+    "status": "complete; targeted_repair_authorized",
+    "report": "docs/seo-internal-link-audit.md",
+    "metrics": "metrics/seo-internal-link-audit.json",
+    "audited_content": 6889,
+    "internal_anchors": 31591,
+    "tested_priority_targets": 83,
+    "tested_404_targets": 57,
+    "stored_404_placements": 305,
+    "affected_stored_sources": 213,
+    "same_language_body_inlink_gap_normal_articles": 5097,
+    "scope_note": "Body graph only, not proof of global orphaned pages; HTTP testing was priority sample.",
+    "repair_pilot": "authorized; source edits after exact target and hash verification; results pending"
   }
 }
