@@ -630,6 +630,122 @@
     "affected_stored_sources": 213,
     "same_language_body_inlink_gap_normal_articles": 5097,
     "scope_note": "Body graph only, not proof of global orphaned pages; HTTP testing was priority sample.",
-    "repair_pilot": "authorized; source edits after exact target and hash verification; results pending"
+    "repair_pilot": "first20 source fixes deployed and independently verified; rest pending"
+  },
+  "internal_link_repair_pilot1": {
+    "status": "deployed_and_verified",
+    "report": "docs/seo-internal-link-repair-pilot1.md",
+    "metrics": "metrics/seo-internal-link-repair-pilot1.json",
+    "verified_at_utc": "2026-10-15T22:38:46.195595+00:00",
+    "changed_posts": 20,
+    "changed_hrefs": 20,
+    "languages": {
+      "fa-IR": 13,
+      "ar-IQ": 7
+    },
+    "family": 35012,
+    "public_pages_passed": 20,
+    "schema_graphs_unchanged": true,
+    "private_backup_available": true,
+    "remaining_same_alias_sources": [
+      {
+        "id": 502126,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502132,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502140,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502142,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502182,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502192,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502232,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502233,
+        "language": "ar-IQ",
+        "type": "post"
+      },
+      {
+        "id": 502234,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502243,
+        "language": "ar-IQ",
+        "type": "post"
+      },
+      {
+        "id": 502244,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502259,
+        "language": "ar-IQ",
+        "type": "post"
+      },
+      {
+        "id": 502260,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502273,
+        "language": "ar-IQ",
+        "type": "post"
+      },
+      {
+        "id": 502274,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502277,
+        "language": "ar-IQ",
+        "type": "post"
+      },
+      {
+        "id": 502278,
+        "language": "tg-TJ",
+        "type": "post"
+      },
+      {
+        "id": 502291,
+        "language": "ar-IQ",
+        "type": "post"
+      },
+      {
+        "id": 502292,
+        "language": "tg-TJ",
+        "type": "post"
+      }
+    ],
+    "next_target_to_live_verify": 501926,
+    "no_request_indexing": true,
+    "no_validate_fix": true
   }
 }
