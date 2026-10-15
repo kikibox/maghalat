@@ -1,0 +1,334 @@
+{
+  "scope": "six public guest samples; not site-wide or GSC recrawl validation",
+  "tests": [
+    {
+      "language": "fa-IR",
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "AFP"
+      },
+      "sku": "125-1",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "1",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "policy_links": [
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "5750000",
+        "priceCurrency": "IRR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "NewCondition",
+        "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://navar-abyari.ir/",
+          "name": "نوار تیپ آبگستر فرا پارسیان AFP",
+          "url": "https://navar-abyari.ir",
+          "logo": "https://navar-abyari.ir/wp-content/uploads/cropped-نوار_تیپ_afp_drip_tape.png"
+        }
+      },
+      "category": "لوله نخ دار",
+      "canonical": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "pass": true,
+      "unrelated_fields_unchanged": true,
+      "product_meta_policy_links": [
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/"
+      ]
+    },
+    {
+      "language": "ru-RU",
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "AFP"
+      },
+      "sku": "125-1-ru",
+      "aggregateRating": null,
+      "policy_links": [
+        "https://navar-abyari.ir/ru-ru-terms/",
+        "https://navar-abyari.ir/ru-ru-terms/",
+        "https://navar-abyari.ir/ru-ru-terms/",
+        "https://navar-abyari.ir/ru-ru-terms/?navar_lang=ru",
+        "https://navar-abyari.ir/ru-ru-terms/?navar_lang=ru"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "5750000",
+        "priceCurrency": "IRR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "NewCondition",
+        "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://navar-abyari.ir/",
+          "name": "نوار تیپ آبگستر فرا پارسیان AFP",
+          "url": "https://navar-abyari.ir",
+          "logo": "https://navar-abyari.ir/wp-content/uploads/cropped-نوار_تیپ_afp_drip_tape.png"
+        }
+      },
+      "category": "Армированный плоский шланг",
+      "canonical": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "pass": true,
+      "unrelated_fields_unchanged": true,
+      "product_meta_policy_links": [
+        "https://navar-abyari.ir/ru-ru-terms/"
+      ]
+    },
+    {
+      "language": "en-US",
+      "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "AFP"
+      },
+      "sku": "125-1-en",
+      "aggregateRating": null,
+      "policy_links": [
+        "https://navar-abyari.ir/en-us-terms/",
+        "https://navar-abyari.ir/en-us-terms/",
+        "https://navar-abyari.ir/en-us-terms/",
+        "https://navar-abyari.ir/en-us-terms/?navar_lang=en",
+        "https://navar-abyari.ir/en-us-terms/?navar_lang=en"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "5750000",
+        "priceCurrency": "IRR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "NewCondition",
+        "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://navar-abyari.ir/",
+          "name": "نوار تیپ آبگستر فرا پارسیان AFP",
+          "url": "https://navar-abyari.ir",
+          "logo": "https://navar-abyari.ir/wp-content/uploads/cropped-نوار_تیپ_afp_drip_tape.png"
+        }
+      },
+      "category": "Thread-Reinforced Layflat Hose",
+      "canonical": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "pass": true,
+      "unrelated_fields_unchanged": true,
+      "product_meta_policy_links": [
+        "https://navar-abyari.ir/en-us-terms/"
+      ]
+    },
+    {
+      "language": "ar-IQ",
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "AFP"
+      },
+      "sku": "125-1-ar",
+      "aggregateRating": null,
+      "policy_links": [
+        "https://navar-abyari.ir/ar-iq-qawanin/",
+        "https://navar-abyari.ir/ar-iq-qawanin/",
+        "https://navar-abyari.ir/ar-iq-qawanin/",
+        "https://navar-abyari.ir/ar-iq-qawanin/?navar_lang=iraq",
+        "https://navar-abyari.ir/ar-iq-qawanin/?navar_lang=iraq"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "5750000",
+        "priceCurrency": "IRR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "NewCondition",
+        "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://navar-abyari.ir/",
+          "name": "نوار تیپ آبگستر فرا پارسیان AFP",
+          "url": "https://navar-abyari.ir",
+          "logo": "https://navar-abyari.ir/wp-content/uploads/cropped-نوار_تیپ_afp_drip_tape.png"
+        }
+      },
+      "category": "خرطوم مسطح مقوّى بالخيوط",
+      "canonical": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "pass": true,
+      "unrelated_fields_unchanged": true,
+      "product_meta_policy_links": [
+        "https://navar-abyari.ir/ar-iq-qawanin/"
+      ]
+    },
+    {
+      "language": "tg-TJ",
+      "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "AFP"
+      },
+      "sku": "125-1-tj",
+      "aggregateRating": null,
+      "policy_links": [
+        "https://navar-abyari.ir/tg-tj-qoidaho/",
+        "https://navar-abyari.ir/tg-tj-qoidaho/",
+        "https://navar-abyari.ir/tg-tj-qoidaho/",
+        "https://navar-abyari.ir/tg-tj-qoidaho/?navar_lang=tj",
+        "https://navar-abyari.ir/tg-tj-qoidaho/?navar_lang=tj"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "5750000",
+        "priceCurrency": "IRR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "NewCondition",
+        "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://navar-abyari.ir/",
+          "name": "نوار تیپ آبگستر فرا پارسیان AFP",
+          "url": "https://navar-abyari.ir",
+          "logo": "https://navar-abyari.ir/wp-content/uploads/cropped-نوار_تیپ_afp_drip_tape.png"
+        }
+      },
+      "category": "Қубури қатшавандаи риштадор",
+      "canonical": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "pass": true,
+      "unrelated_fields_unchanged": true,
+      "product_meta_policy_links": [
+        "https://navar-abyari.ir/tg-tj-qoidaho/"
+      ]
+    },
+    {
+      "language": "fa-unrated",
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d8%aa%d8%a7%d8%b4%d9%88-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1-5-%d8%a7%db%8c%d9%86%da%86/",
+      "http": 200,
+      "product_count": 1,
+      "brand": {
+        "@type": "Brand",
+        "name": "AFP"
+      },
+      "sku": "125-2",
+      "aggregateRating": null,
+      "policy_links": [
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "51000000",
+        "priceCurrency": "IRR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "NewCondition",
+        "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d8%aa%d8%a7%d8%b4%d9%88-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1-5-%d8%a7%db%8c%d9%86%da%86/",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://navar-abyari.ir/",
+          "name": "نوار تیپ آبگستر فرا پارسیان AFP",
+          "url": "https://navar-abyari.ir",
+          "logo": "https://navar-abyari.ir/wp-content/uploads/cropped-نوار_تیپ_afp_drip_tape.png"
+        }
+      },
+      "category": "لوله تاشو بدون نخ",
+      "canonical": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d8%aa%d8%a7%d8%b4%d9%88-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1-5-%d8%a7%db%8c%d9%86%da%86/",
+      "pass": true,
+      "product_meta_policy_links": [
+        "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/"
+      ]
+    }
+  ],
+  "policy_targets": [
+    {
+      "url": "https://navar-abyari.ir/%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86/",
+      "http": 200,
+      "final_url": "https://navar-abyari.ir/%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86/"
+    },
+    {
+      "url": "https://navar-abyari.ir/ar-iq-qawanin/",
+      "http": 200,
+      "final_url": "https://navar-abyari.ir/ar-iq-qawanin/"
+    },
+    {
+      "url": "https://navar-abyari.ir/en-us-terms/",
+      "http": 200,
+      "final_url": "https://navar-abyari.ir/en-us-terms/"
+    },
+    {
+      "url": "https://navar-abyari.ir/ru-ru-terms/",
+      "http": 200,
+      "final_url": "https://navar-abyari.ir/ru-ru-terms/"
+    },
+    {
+      "url": "https://navar-abyari.ir/tg-tj-qoidaho/",
+      "http": 200,
+      "final_url": "https://navar-abyari.ir/tg-tj-qoidaho/"
+    }
+  ],
+  "purged_sample_urls": [
+    {
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d9%86%d8%ae%d8%af%d8%a7%d8%b1-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1/",
+      "action": "WP Rocket native purge-url only"
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ru-ru-product-35011/",
+      "action": "WP Rocket native purge-url only"
+    },
+    {
+      "url": "https://navar-abyari.ir/product/en-us-product-35011/",
+      "action": "WP Rocket native purge-url only"
+    },
+    {
+      "url": "https://navar-abyari.ir/product/ar-iq-product-35011/",
+      "action": "WP Rocket native purge-url only"
+    },
+    {
+      "url": "https://navar-abyari.ir/product/tg-tj-product-35011/",
+      "action": "WP Rocket native purge-url only"
+    },
+    {
+      "url": "https://navar-abyari.ir/product/%d9%84%d9%88%d9%84%d9%87-%d8%aa%d8%a7%d8%b4%d9%88-125-%d9%85%db%8c%d9%84%db%8c%d9%85%d8%aa%d8%b1-5-%d8%a7%db%8c%d9%86%da%86/",
+      "action": "WP Rocket native purge-url only"
+    }
+  ],
+  "files": [
+    {
+      "file": "wp-content/themes/navar-child-zamtar-reader/inc/schema.php",
+      "old_sha256": "898349f921c84b65db7232d7e971818c86d553e067abc372ecbaa18eee9a157c",
+      "new_sha256": "d9cec82ce5f55f17ec20376a397c0a7a9cb82fe1054fed9b50e583bb147955c6",
+      "old_bytes": 1424,
+      "new_bytes": 2153
+    },
+    {
+      "file": "wp-content/themes/navar-child-zamtar-reader/inc/woocommerce.php",
+      "old_sha256": "43ef657218556ae9eb3ef79871133b4d9f27ee652e8a0ec397713453aee1ff42",
+      "new_sha256": "b6b35cc93f54b49ec0f47d71e325a284621a923a8841f0a9cad7afd4e55c0c12",
+      "old_bytes": 3917,
+      "new_bytes": 4354
+    }
+  ],
+  "php_unit_assertions": 25,
+  "php_lint_passed": true,
+  "gsc_validate_fix": false
+}

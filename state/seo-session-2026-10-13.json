@@ -351,5 +351,44 @@
     "validate_fix": false,
     "request_indexing": false,
     "live_rich_results_test_run": false
+  },
+  "schema_root_fix_stage1": {
+    "status": "deployed_and_public_sample_verified",
+    "report": "docs/seo-schema-root-fix-stage1.md",
+    "rank_math_brand_before": "product_type",
+    "rank_math_brand_after": "custom",
+    "custom_brand": "AFP",
+    "theme_files_modified": [
+      "inc/schema.php",
+      "inc/woocommerce.php"
+    ],
+    "independent_readback_match": true,
+    "php_lint": true,
+    "unit_assertions_passed": 25,
+    "public_sample_count": 6,
+    "sample_languages": [
+      "fa-IR",
+      "ar-IQ",
+      "tg-TJ",
+      "en-US",
+      "ru-RU"
+    ],
+    "one_product_each": true,
+    "canonical_product_meta_policy_links": true,
+    "real_ratings_only": true,
+    "baseline_offer_category_sku_unchanged": true,
+    "only_sample_url_caches_purged": true,
+    "global_cache_purged": false,
+    "all_product_caches_verified": false,
+    "validate_fix": false,
+    "request_indexing": false,
+    "rich_results_test": false,
+    "remaining": [
+      "category_warning_cause_unproven",
+      "unbacked_default_priceValidUntil",
+      "missing_validFrom",
+      "foreign_ItemPage_language",
+      "shippingDetails_and_return_policy_schema"
+    ]
   }
 }

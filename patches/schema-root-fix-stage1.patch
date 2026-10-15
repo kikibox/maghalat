@@ -1,0 +1,52 @@
+--- a/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
++++ b/wp-content/themes/navar-child-zamtar-reader/inc/schema.php
+@@ -4,3 +4,13 @@
+ function navar_build_faq_schema($c){if(strpos($c,'<details')===false)return array();preg_match_all('/<details[^>]*>\s*<summary[^>]*>(.*?)<\/summary>(.*?)<\/details>/is',$c,$ms,PREG_SET_ORDER);$q=array();foreach($ms as $m){$n=trim(wp_strip_all_tags($m[1]));$a=trim(wp_strip_all_tags($m[2]));if($n&&$a)$q[]=array('@type'=>'Question','name'=>$n,'acceptedAnswer'=>array('@type'=>'Answer','text'=>$a));}return $q?array('@context'=>'https://schema.org','@type'=>'FAQPage','mainEntity'=>$q):array();}
+ add_action('wp_footer',function(){if(!is_singular())return;$p=get_post(get_queried_object_id());if(!$p||strpos($p->post_content,'FAQPage')!==false)return;navar_print_jsonld(navar_build_faq_schema($p->post_content));},30);
+ add_action('wp_head',function(){if(!is_front_page()||class_exists('RankMath')||defined('WPSEO_VERSION'))return;navar_print_jsonld(array('@context'=>'https://schema.org','@graph'=>array(array('@type'=>'Organization','@id'=>home_url('/#organization'),'name'=>get_bloginfo('name'),'url'=>home_url('/')),array('@type'=>'WebSite','@id'=>home_url('/#website'),'url'=>home_url('/'),'name'=>get_bloginfo('name'),'inLanguage'=>get_bloginfo('language'),'publisher'=>array('@id'=>home_url('/#organization'))))));},20);
++
++/** Rank Math replaces WooCommerce's schema output: enrich its existing Product, never emit another. */
++function navar_rank_math_product_structured_data( $entity ) {
++    if ( ! is_array($entity) || is_admin() || ! function_exists('is_product') || ! is_product() ) return $entity;
++    if ( ! function_exists('wc_get_product') || ! function_exists('navar_enrich_product_structured_data') ) return $entity;
++    $product = wc_get_product(get_queried_object_id());
++    // Brand comes from Rank Math settings; do not override a configured brand here.
++    return navar_enrich_product_structured_data($entity, $product, false);
++}
++add_filter('rank_math/snippet/rich_snippet_product_entity','navar_rank_math_product_structured_data',90);
+--- a/wp-content/themes/navar-child-zamtar-reader/inc/woocommerce.php
++++ b/wp-content/themes/navar-child-zamtar-reader/inc/woocommerce.php
+@@ -2,13 +2,30 @@
+ if(!defined('ABSPATH'))exit;
+ function navar_return_policy_url($lang=''){
+     $lang=$lang?:navar_lang();
+-    $paths=array('fa'=>'قوانین','iraq'=>'iraq-rules','tj'=>'tj-rules','en'=>'en-rules','ru'=>'ru-rules');
++    $paths=array('fa'=>'قوانین','iraq'=>'ar-iq-qawanin','tj'=>'tg-tj-qoidaho','en'=>'en-us-terms','ru'=>'ru-ru-terms');
+     $p=get_page_by_path(isset($paths[$lang])?$paths[$lang]:'قوانین');
+     if(!$p)$p=get_page_by_path('قوانین');
+     return $p?get_permalink($p):home_url('/');
+ }
+-add_filter('woocommerce_structured_data_product',function($m,$p){if(!$p instanceof WC_Product)return $m;$m['brand']=array('@type'=>'Brand','name'=>'AFP');if($p->get_sku())$m['sku']=$p->get_sku();$count=(int)$p->get_review_count();$avg=(float)$p->get_average_rating();if($count&&$avg)$m['aggregateRating']=array('@type'=>'AggregateRating','ratingValue'=>(string)$avg,'reviewCount'=>(string)$count,'bestRating'=>'5','worstRating'=>'1');else unset($m['aggregateRating']);return $m;},20,2);
+-add_action('woocommerce_product_meta_end',function(){if(!is_product())return;$lang=navar_lang();$shipping='fa'===$lang?'باربری، حضوری یا راننده به سراسر کشور':navar_ui_text('shipping_details');printf('<div class="navar-shipping-info"><p><strong>%s:</strong> %s</p><p><strong>%s:</strong> <a href="%s" rel="nofollow">%s</a></p><p>%s</p><p>%s</p><p>%s</p></div>',esc_html(navar_ui_text('shipping')),esc_html($shipping),esc_html(navar_ui_text('returns')),esc_url(navar_localize_url(navar_return_policy_url($lang),$lang)),esc_html(navar_ui_text('view_rules')),esc_html(navar_ui_text('online_purchase')),esc_html(navar_ui_text('price_note')),esc_html(navar_ui_text('contact_note')));});
++/** Use actual WooCommerce SKU/reviews; keep Rank Math's configured brand authoritative. */
++function navar_enrich_product_structured_data( $data, $product, $include_brand = true ) {
++    if ( ! is_array($data) || ! $product instanceof WC_Product ) return $data;
++    if ( $include_brand ) $data['brand'] = array('@type'=>'Brand','name'=>'AFP');
++    if ( $product->get_sku() ) $data['sku'] = $product->get_sku();
++    $count = (int) $product->get_review_count();
++    $average = (float) $product->get_average_rating();
++    if ( $count > 0 && $average > 0 ) {
++        $data['aggregateRating'] = array(
++            '@type'=>'AggregateRating', 'ratingValue'=>(string)$average,
++            'reviewCount'=>(string)$count, 'bestRating'=>'5', 'worstRating'=>'1'
++        );
++    } else {
++        unset($data['aggregateRating']);
++    }
++    return $data;
++}
++add_filter('woocommerce_structured_data_product','navar_enrich_product_structured_data',20,2);
++add_action('woocommerce_product_meta_end',function(){if(!is_product())return;$lang=navar_lang();$shipping='fa'===$lang?'باربری، حضوری یا راننده به سراسر کشور':navar_ui_text('shipping_details');printf('<div class="navar-shipping-info"><p><strong>%s:</strong> %s</p><p><strong>%s:</strong> <a href="%s" rel="nofollow">%s</a></p><p>%s</p><p>%s</p><p>%s</p></div>',esc_html(navar_ui_text('shipping')),esc_html($shipping),esc_html(navar_ui_text('returns')),esc_url(navar_return_policy_url($lang)),esc_html(navar_ui_text('view_rules')),esc_html(navar_ui_text('online_purchase')),esc_html(navar_ui_text('price_note')),esc_html(navar_ui_text('contact_note')));});
+ 
+ /** Keep WooCommerce product archives in the active content language. */
+ function navar_filter_woocommerce_products_by_language( $query ) {
