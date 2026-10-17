@@ -2,6 +2,7 @@
 """Generate, review, validate, and package publish-ready missing-city posts."""
 import hashlib,json,os,re,time
 import city_content_queue as base
+import article_link_policy
 import city_content_queue_cloudflare as queue
 
 ORIGINAL_MAKE=queue.make_content
@@ -45,12 +46,7 @@ def safe_links(links):
         return any(x in url for x in BLOCKED_LINK_TERMS) or any(x in title for x in BLOCKED_TITLE_TERMS)
     clean=[x for x in links if x.get('url') and x.get('title') and not blocked(x)]
     preferred=[x for x in clean if any(term in str(x.get('title','')) for term in PREFERRED_LINK_TERMS)]
-    chosen=[];seen=set()
-    for link in preferred+clean:
-        if link['url'] in seen:continue
-        chosen.append(link);seen.add(link['url'])
-        if len(chosen)>=12:break
-    return chosen
+    return article_link_policy.select_links({'title':'انتخاب نوار آبیاری','focus':'انتخاب خرید نصب طراحی نگهداری لوله قطره چکان فشار فیلتراسیون ضخامت فاصله سیستم آب مزرعه'},preferred+clean)
 
 def rebuild_internal_links(obj,links):
     body=obj.get('html','')
@@ -78,6 +74,8 @@ def validate_reviewed(obj,item,links):
     return errors
 
 def reviewed_make_content(item,links):
+    links=safe_links(links)
+    if len(links)<base.MIN_LINKS:raise RuntimeError('Not enough verified internal links before city generation')
     draft=ORIGINAL_MAKE(item,links)
     review_prompt=f'''به‌عنوان ویراستار ارشد فارسی، متخصص سئو و بازبین فنی آبیاری، مقاله زیر را بازبینی و اصلاح کن. همه نویسه‌های روسی، چینی، علائم تمام‌عرض و واژه‌های لاتین ناخواسته را حذف یا به فارسی روان تبدیل کن؛ فقط FAQ مجاز است. همه لینک‌های HTML را حذف کن و هیچ لینک تازه‌ای نساز؛ سامانه پس از بازبینی لینک‌های امن را اضافه می‌کند. ادعاهای ساختگی درباره اقلیم محلی، قیمت، نمایندگی، موجودی، ارسال و مشخصات محصول را حذف کن. نوار تیپ را PVC معرفی نکن؛ جنس رایج آن پلی‌اتیلن است. فشار، ضخامت، عمر و فاصله قطره‌چکان را قانون قطعی و یکسان برای همه محصولات اعلام نکن و انتخاب نهایی را به دیتاشیت سازنده، کیفیت آب، نوع کشت و طراحی متخصص وابسته کن. توصیه شیمیایی و اسیدشویی فقط با هشدار بررسی کیفیت آب، دستور سازنده و نظر متخصص مجاز است. تناقض، وعده قطعی، عبارت مبهم و خطاهای تایپی را اصلاح کن. متن نهایی حداقل {base.MIN_WORDS} کلمه باشد و ساختار HTML و نشانگرهای [[[IMAGE_2]]], [[[IMAGE_3]]], [[[IMAGE_4]]], [[[IMAGE_5]]] را هرکدام دقیقاً یک بار حفظ کند. عنوان باید شامل شهر {item['city']} باشد. فقط JSON معتبر با کلیدهای title, meta_title, meta_description, focus_keyword, excerpt, html برگردان.\n\nپیش‌نویس:\n{json.dumps(draft,ensure_ascii=False)}'''
     last=[]

@@ -21,6 +21,7 @@ from pathlib import Path
 
 
 import rewrite_city_samples as base
+import article_link_policy
 
 
 
@@ -184,7 +185,7 @@ def existing_index(posts):
 
 
 
-  if slug:
+  if slug and p.get('post_status')=='publish' and p.get('post_type') in article_link_policy.CONTENT_TYPES:
 
 
 
@@ -276,17 +277,10 @@ def make_content(item,links):
 
 
 
- # Keep only real content types (drop WooCommerce/ACF/menu/cache junk that
- # pollutes the related-content pool with non-content slugs).
- CONTENT_TYPES={'post','page','product','faq'}
- approved=[x for x in links if (x.get('post_type') in CONTENT_TYPES or (x.get('post_type') not in {'acf-field','acf-field-group','nav_menu_item','oembed_cache','rank_math_schema','wp_global_styles','elementor_library','custom_css','gp_elements','wpcf7_contact_form','customize_changeset','gp_font'}))]
- if len(approved)>12:
-
-  random.Random(str(item.get('source_id',''))).shuffle(approved)
-
-  approved=approved[:12];link_lines='\n'.join(f"- {x['title']} | {x['url']}" for x in approved);prompt=f'''برای شهر {item['city']} در شهرستان {item['county']}، استان {item['province']} یک مقاله کاملاً جدید و سئوشده درباره انتخاب و خرید نوار آبیاری بنویس. متن فارسی طبیعی، دست‌کم {MIN_WORDS} کلمه، بدون ادعای ساختگی درباره اقلیم، قیمت، نمایندگی یا ارسال محلی باشد. ساختار HTML فقط با h2/h3/p/ul/ol/table/strong/a باشد و H1 نداشته باشد. موضوعات: نیازسنجی مزرعه، انتخاب ضخامت و فاصله قطره‌چکان، فشار و فیلتراسیون، طراحی، نصب، نگهداری، خطاها، FAQ و جمع‌بندی. حداقل {MIN_LINKS} و حداکثر ۷ لینک داخلی فقط از فهرست زیر استفاده کن. سه نشانگر دقیق [[[IMAGE_1]]], [[[IMAGE_2]]], [[[IMAGE_3]]] را هرکدام یک‌بار و بین بخش‌های مناسب بگذار. JSON با کلیدهای title, meta_title, meta_description, focus_keyword, excerpt, html برگردان.\nلینک‌های مجاز:\n{link_lines}'''
-
-
+ approved=article_link_policy.select_links({'title':item.get('title') or 'انتخاب نوار آبیاری', 'focus':'انتخاب خرید نصب طراحی نگهداری لوله قطره چکان فشار فیلتراسیون ضخامت فاصله سیستم آب مزرعه'},links)
+ if len(approved)<MIN_LINKS:raise RuntimeError('Not enough verified internal links for city content')
+ link_lines='\n'.join(f"- {x['title']} | {x['url']}" for x in approved)
+ prompt=f'''برای شهر {item['city']} در شهرستان {item['county']}، استان {item['province']} یک مقاله کاملاً جدید و سئوشده درباره انتخاب و خرید نوار آبیاری بنویس. متن فارسی طبیعی، دست‌کم {MIN_WORDS} کلمه، بدون ادعای ساختگی درباره اقلیم، قیمت، نمایندگی یا ارسال محلی باشد. ساختار HTML فقط با h2/h3/p/ul/ol/table/strong/a باشد و H1 نداشته باشد. موضوعات: نیازسنجی مزرعه، انتخاب ضخامت و فاصله قطره‌چکان، فشار و فیلتراسیون، طراحی، نصب، نگهداری، خطاها، FAQ و جمع‌بندی. حداقل {MIN_LINKS} و حداکثر ۷ لینک داخلی فقط از فهرست زیر استفاده کن. سه نشانگر دقیق [[[IMAGE_1]]], [[[IMAGE_2]]], [[[IMAGE_3]]] را هرکدام یک‌بار و بین بخش‌های مناسب بگذار. JSON با کلیدهای title, meta_title, meta_description, focus_keyword, excerpt, html برگردان.\nلینک‌های مجاز:\n{link_lines}'''
 
  for _ in range(4):
 
@@ -298,7 +292,9 @@ def make_content(item,links):
 
 
 
-  if words(body)>=MIN_WORDS and MIN_LINKS<=len(used)<=7 and all(body.count(f'[[[IMAGE_{i}]]]')==1 for i in range(1,4)) and not(used-allowed):return obj
+  if words(body)>=MIN_WORDS and MIN_LINKS<=len(used)<=7 and all(body.count(f'[[[IMAGE_{i}]]]')==1 for i in range(1,4)) and not(used-allowed):
+   obj['html']=body
+   return obj
 
 
 
