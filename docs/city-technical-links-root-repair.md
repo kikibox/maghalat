@@ -64,3 +64,19 @@ This batch is not a claim that every technical link on the site is removed,
 every old 404 is fixed, or the agronomic accuracy of each article is verified.
 Other city pages remain for fresh inspection. Technical object URLs should
 not be redirected to unrelated pages to make Search Console counts disappear.
+## Final verification and remaining scope
+
+The registered source change is commit
+`59ca2c48683ebd4902b2b3875734762cac139dfa`. All six committed files were
+read back and matched the intended bytes. All seven regression tests passed
+locally and in GitHub Actions:
+https://github.com/kikibox/maghalat/actions/runs/39057462437
+
+All 20 public source pages were also checked for their exact WordPress post
+identity, their own matching canonical, and zero redirect hops. Reapplying the
+same paragraph-removal transform has no remaining targets in this batch.
+
+A fresh database query still finds 84 other published pages whose stored
+content contains one of the three technical path patterns. Those pages need
+individual review; this count is a queue of pattern matches, not a claim that
+every remaining occurrence has already been inspected or repaired.
