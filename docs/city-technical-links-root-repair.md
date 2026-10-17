@@ -24,8 +24,9 @@ to the three technical namespaces. All 22 such links were present in the
 same public pages before the change.
 
 No original publication date, slug, title, price or product specification
-was rewritten. Modification timestamps reflect the actual edit using the
-site's configured GMT offset.
+was rewritten. Modification timestamps preserve the actual UTC edit instant. The follow-up
+batch aligned local times with WordPress' resolved Asia/Tehran timezone; the
+raw gmt_offset option was blank and was not a reliable offset source.
 
 ## Producer hardening
 
@@ -76,7 +77,48 @@ All 20 public source pages were also checked for their exact WordPress post
 identity, their own matching canonical, and zero redirect hops. Reapplying the
 same paragraph-removal transform has no remaining targets in this batch.
 
-A fresh database query still finds 84 other published pages whose stored
-content contains one of the three technical path patterns. Those pages need
-individual review; this count is a queue of pattern matches, not a claim that
-every remaining occurrence has already been inspected or repaired.
+After the first 20-page batch, a database query found 84 other published pages
+with the same technical path patterns. They were queued for individual review;
+the follow-up results below supersede that remaining-work count.
+
+## Follow-up: all 84 remaining source pages completed
+
+All 84 queued pages were loaded afresh and checked against their stored
+SHA-256 content hashes. They contained 88 additional injected referral
+paragraphs, each with exactly one link to an implementation-object namespace.
+All 88 were removed at the stored source, preserving every other body byte,
+valid link, heading, image, figure, table, video and iframe.
+
+An independent live database readback verified all 104 content hashes across
+both batches. A fresh query across every published post type now finds zero
+post_content values containing the three audited technical path patterns.
+This result is scoped to published stored content, not every database field
+or every possible malformed URL spelling.
+
+WordPress REST reports timezone Asia/Tehran and a resolved offset of +03:30.
+The raw gmt_offset option is blank. Local modification timestamps were
+aligned with the resolved zone, including the earlier 20 pages, while
+retaining their original UTC edit instants. No publication date was
+rewritten and no artificial later edit time was assigned.
+
+One source already had a historical alias redirecting to its actual
+canonical with a -2 suffix. Its exact post identity was independently
+verified at the direct canonical; no slug, canonical or redirect rule was
+changed in this follow-up.
+
+After a confirmed WP Rocket purge, unauthenticated public requests checked
+all 104 source pages, including the earlier batch. Every page returned
+direct HTTP 200, had the expected WordPress post identity and matching
+canonical, and exposed zero links to the three technical namespaces.
+
+Combined verified result: 110 invalid referral paragraphs removed from
+104 source pages. The public-before link counts independently match the
+repair plan. A second identical removal pass has zero targets. Private
+backups, hash-guarded repair/rollback files, and verification evidence remain
+outside this public repository.
+
+This closes the audited three-namespace internal-referral cleanup, not all
+site SEO or factual-content review. Technical object URLs were not
+redirected to unrelated content. Search Console may retain historical
+examples; no blanket validation was started. Old SQL packages still require
+review before re-import and were not certified by this cleanup.
